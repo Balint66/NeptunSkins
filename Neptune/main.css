@@ -160,6 +160,12 @@ a:hover
 	background-image:url('https://i.imgur.com/GwjZXem.png');
 }
 
+.KollabChooserSelected
+{
+    /*Image Variant*/
+    background-image:url('https://i.imgur.com/GwjZXem.png');
+}
+
 .buttonlink
 {
     /*Image Variant*/
@@ -185,3 +191,25 @@ a:hover
     background-image:url('https://gitcdn.link/repo/Balint66/NeptunSkins/master/Neptune/button_normal_right.png');
 }
 
+.contextitem:hover,
+.almenu_item:hover,
+.contextitemschedule:hover,
+.contextitem:focus,
+.almenu_item:focus,
+.contextitemschedule:focus
+{
+    /*Image Variant*/
+    background-image:url('https://gitcdn.link/repo/Balint66/NeptunSkins/master/Neptune/submenu_item_hover_01.png');
+}
+
+ul.menu .menu-hover 
+{
+    /*Image Variant*/
+    background-image: url('https://gitcdn.link/repo/Balint66/NeptunSkins/master/Neptune/submenu_item_hover_01.png');
+}
+
+ul.menu .menu-focus 
+{
+    /*Image Variant*/
+    background-image: url('https://gitcdn.link/repo/Balint66/NeptunSkins/master/Neptune/submenu_item_hover_01.png');
+}
