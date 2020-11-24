@@ -43,12 +43,10 @@ window.dochangeSkin = function(href, skin)
 
 function selectSkin(skinName)
 {
-    /*if(skinName === "Anime1")
+    if(skinName === "Anime1")
     {
-        document.getElementsByClassName("main_header_r")[0].style.backgroundImage = "url(https://i.imgur.com/2HVmKTd.png)";
-        document.getElementsByClassName("main_header_l")[0].style.backgroundImage = "url(https://i.imgur.com/uYyLXru.jpg)";
-        document.getElementsByClassName("NeptunChooserSelected")[0].style.backgroundImage = "url(https://i.imgur.com/GwjZXem.png)";
-    }*/
+        cssElement.href = "https://raw.githubusercontent.com/Balint66/NeptunSkins/master/Neptune/main.css?token=AKVCWCZZUMF2PQJG35WNRCK7XUKN6";
+    }
 }
 
 function createButton({name='', alt=null})

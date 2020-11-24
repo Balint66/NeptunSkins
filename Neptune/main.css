@@ -1,12 +1,12 @@
 :root
 {
-    --main-color: #FF8400;
+    --main-color: #b868df;
 }
 
 .newsTable span.link:hover
 {
-                /*Color variant*/
-                color: var(--main-color);
+    /*Color variant*/
+    color: var(--main-color);
 }
 
 h2
@@ -18,34 +18,27 @@ h2
 {    
     /*Color variant*/
 	color: var(--main-color);
-	text-decoration:underline;
-    cursor:pointer;
-    font-weight:bold;
 }
 
 .scrollablebody tr td span.link
 {
-                padding-left:3px;
-                 /*Color variant*/
-	                color: var(--main-color);
-                text-decoration:underline;
-                cursor:pointer
+
+    /*Color variant*/
+    color: var(--main-color);
 }
 
 .scrollablebody tr:hover .subrow_td span.link { /*Color variant*/color: var(--main-color);}
 
 .Row1_Bold_sel td
 {
-                    /*Color variant*/
-                    color: var(--main-color);
-                background-color:#e0e0e0;       
+    /*Color variant*/
+    color: var(--main-color);       
 }
 
 .Row1_sel td
 {
-                 /*Color variant*/
-	                color: var(--main-color);
-                background-color:#f8f8f8;
+    /*Color variant*/
+    color: var(--main-color);
 }
 
 a.img_excel
@@ -56,74 +49,49 @@ a.img_excel
 
 .contextcell span
 {
-   text-decoration:underline;
 	 /*Color variant*/
 	color: var(--main-color);
-	cursor:pointer;
 }
 
 a
 {
-    text-decoration: none;
 	 /*Color variant*/
 	color: var(--main-color); 
 }
 
 a:hover
 {
-    text-decoration: underline;
 	 /*Color variant*/
 	color: var(--main-color);
 }
 
 .footer_menu a:hover
 {
-	text-decoration: underline;
 	 /*Color variant*/
 	color: var(--main-color);
 }
 
 .main_favorites_headertext
 {
-	padding-left:42px;
 	 /*Color variant*/
 	color: var(--main-color);
-	font-size:16px;
-	background-repeat:no-repeat;
-	background-image:url('../Common_Images/left_favorits.png');
 }
 
 .grid_remove_favorite
 {
-    background-image:url('../New_Common_Images/remove_fav.png');
-    background-repeat:no-repeat;
-    padding-left:20px;
-    cursor:pointer;
      /*Color variant*/
 	color: var(--main-color);
-    text-decoration:underline;
 }
 
 .grid_add_favorite
 {
-    background-image:url('../New_Common_Images/add_fav.png');
-    background-repeat:no-repeat;
-    padding-left:20px;
-    cursor:pointer;
-     /*Color variant*/
 	color: var(--main-color);
-    text-decoration:underline;
 }
 
-.newsDetailTitle{
-    background-color:#ffffff;
+.newsDetailTitle
+{
      /*Color variant*/
 	color: var(--main-color);
-    text-align:left;    
-    font-size: 14px;
-    font-weight:bold;
-    border-bottom: 1px solid #bbbbbb;
-    padding-bottom: 4px;    
 }
 
 .TitleLeft
@@ -134,24 +102,14 @@ a:hover
 
 .MyCalendar .ajax__calendar_today 
 {
-                padding:0px;
-                margin:0px;
-                font-weight: normal;
-                font-size:11px;
-                padding-bottom:3px;
-                height:12px;
-                 /*Color variant*/
-	                color: var(--main-color);
-                background-image:url('../New_Common_Images/datepicker_footer.png');    
-                background-repeat:no-repeat;                
+    /*Color variant*/
+    color: var(--main-color);               
 }
 
 .MyCalendar .ajax__calendar_days .ajax__calendar_hover
 {
-                 /*Color variant*/
-	                color: var(--main-color);
-                background-image:url('../New_Common_Images/datepicker_selected_day.png');
-                background-repeat:no-repeat;              
+    /*Color variant*/
+    color: var(--main-color);             
 }
 
 .calendar .calendar_othermonthdaystyle:hover , 
@@ -159,32 +117,23 @@ a:hover
 .calendar .calendar_othermonthdaystyle:hover,
 .calendar .calendar_weekendDdystyle:hover
 {
-	background-image:url('../New_Common_Images/datepicker_selected_day.png');
-	background-repeat: no-repeat;
 	/*Color variant*/
     color: var(--main-color);
-	cursor:pointer;
 }
 
 .LinkButton
 {
       /*Color variant*/
 	 color: var(--main-color);
-	 text-decoration:underline;
-     cursor:pointer;
 }
 
 .orarendtervezo
 {
-    border-width: 2px;
      /*Color variant*/
-	border-color: var(--main-color);
-    position: fixed;
-    bottom: 2px;
-    right: 2px;
-    width: 400px;
-    height: 392px;
-    overflow: hidden;
-    z-index: 1000;
+    border-color: var(--main-color);
 }
 
+.divButton {
+    /*Color variant*/
+   background-color: var(--main-color);
+}
