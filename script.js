@@ -16,19 +16,70 @@
 // @description 11/24/2020, 3:09:00 PM
 // ==/UserScript==
 
+var $ = window.jQuery;
 var ChooseBase = window.dochangeSkin;
 var cssElement = document.createElement("link");
 cssElement.rel = "stylesheet";
 cssElement.type = "text/css";
 cssElement.href = "";
 
+function showHideThemeChooser() {
+
+	var col = $('.skinchooserimgcollapsed')
+	
+    if (col != null) {
+        var cho = $('.skinchooserimg')
+        cho.width("20px");
+        cho.animate({ height: "0px" }, 300);
+        cho.animate({ height: "20px" }, 150);
+        col.toggleClass("skinchooserimgcollapsed skinchooserimgexpanded", 300);
+    }
+    else {
+        $('.skinchooserimgexpanded').toggleClass("skinchooserimgexpanded skinchooserimgcollapsed", 300);
+    }
+
+    state = !state;
+    SetAriaHiddenAttributeToSkinChooserImages(state);
+}
+
+function init()
+{
+
+    window.ShowHideThemeChooser = showHideThemeChooser;
+
+    var skinchooserimg_blue = $('.skinchooserimg_blue');
+    var skinchooserimg_green = $('.skinchooserimg_green');
+    var skinchooserimg_pink = $('.skinchooserimg_pink');
+    var skinchooserimg_orange = $('.skinchooserimg_orange');
+    var skinchooserimg_teacher = $('.skinchooserimg_teacher');
+    var skinchooserimg_purple = $('.skinchooserimg_purple');
+    var skinchooserimg_szte = $('.skinchooserimg_szte');
+
+    setSkinImageUrl();
+
+    skinchooserimg_blue.bind('mouseover', { skinName: 'Blue' }, showSkinPreview);
+    skinchooserimg_green.bind('mouseover', { skinName: 'Green' }, showSkinPreview);
+    skinchooserimg_pink.bind('mouseover', { skinName: 'Pink' }, showSkinPreview);
+    skinchooserimg_orange.bind('mouseover', { skinName: 'Orange' }, showSkinPreview);
+    skinchooserimg_teacher.bind('mouseover', { skinName: 'Teacher' }, showSkinPreview);
+    skinchooserimg_purple.bind('mouseover', { skinName: 'Purple' }, showSkinPreview);
+    skinchooserimg_szte.bind('mouseover', { skinName: 'SZTE' }, showSkinPreview);
+
+    skinchooserimg_blue.bind('mouseout', { skinName: 'Blue' }, hideSkinPreview);
+    skinchooserimg_green.bind('mouseout', { skinName: 'Green' }, hideSkinPreview);
+    skinchooserimg_pink.bind('mouseout', { skinName: 'Pink' }, hideSkinPreview);
+    skinchooserimg_orange.bind('mouseout', { skinName: 'Orange' }, hideSkinPreview);
+    skinchooserimg_teacher.bind('mouseout', { skinName: 'Teacher' }, hideSkinPreview);
+    skinchooserimg_purple.bind('mouseout', { skinName: 'Purple' }, hideSkinPreview);
+    skinchooserimg_szte.bind('mouseout', { skinName: 'SZTE' }, hideSkinPreview);
+}
+
 window.dochangeSkin = function(href, skin)
 {
+
 	if(!((String)(skin)).startsWith("Skin_Neptun_Anime"))
 	{
-		alert('Yep');
         window.localStorage.setItem('CustomSkin',null);
-		alert(window.localStorage.getItem('CustomSkin'));
         return ChooseBase(href, skin)
     }
 
@@ -45,7 +96,7 @@ function selectSkin(skinName)
 {
     if(skinName === "Anime1")
     {
-        cssElement.href = "https://gitcdn.link/repo/Balint66/NeptunSkins/master/Neptune/main.css";
+        cssElement.href = "https://gitcdn.link/cdn/Balint66/NeptunSkins/7007c7558501da9ca52dc1b50310682955083a7f/Neptune/main.css?v=1";
     }
 }
 
@@ -93,7 +144,7 @@ function addPreviewsto({parent, alt, name='',src=''})
 
 window.addEventListener('load', function() {
 
-    var h = document.querySelectorAll('head')[0];
+    var h = document.querySelector('head');
 
     h.appendChild(cssElement);
 
@@ -101,6 +152,8 @@ window.addEventListener('load', function() {
     {
 		selectSkin(window.localStorage.getItem('CustomSkin'));
     }
+
+    init();
 
     var skinChooser = ( document.getElementsByClassName("skinchooserimgcollapsed") || document.getElementsByClassName("skinchooserimgexpanded") )[0];
 

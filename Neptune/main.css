@@ -159,3 +159,9 @@ a:hover
     /*Image Variant*/
 	background-image:url('https://i.imgur.com/GwjZXem.png');
 }
+
+.buttonlink
+{
+    /*Image Variant*/
+    background-image:url('button_normal_right.png');
+}
