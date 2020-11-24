@@ -1,3 +1,5 @@
+/*---------Colors---------*/
+
 :root
 {
     --main-color: #b868df;
@@ -136,4 +138,24 @@ a:hover
 .divButton {
     /*Color variant*/
    background-color: var(--main-color);
+}
+
+/*---------Images---------*/
+
+.main_header_r
+{
+    /*Image Variant*/
+	background-image:url('https://i.imgur.com/2HVmKTd.png');
+}
+
+.main_header_l
+{
+    /*Image Variant*/
+	background-image:url('https://i.imgur.com/uYyLXru.jpg');
+}
+
+.NeptunChooserSelected
+{
+    /*Image Variant*/
+	background-image:url('https://i.imgur.com/GwjZXem.png');
 }

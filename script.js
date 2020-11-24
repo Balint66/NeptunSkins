@@ -45,7 +45,7 @@ function selectSkin(skinName)
 {
     if(skinName === "Anime1")
     {
-        cssElement.href = "https://raw.githubusercontent.com/Balint66/NeptunSkins/master/Neptune/main.css?token=AKVCWCZZUMF2PQJG35WNRCK7XUKN6";
+        cssElement.href = "https://gitcdn.link/repo/Balint66/NeptunSkins/master/Neptune/main.css";
     }
 }
 
