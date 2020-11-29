@@ -169,26 +169,26 @@ a:hover
 .buttonlink
 {
     /*Image Variant*/
-    background-image:url('https://gitcdn.link/repo/Balint66/NeptunSkins/master/Neptune/button_normal_right.png');
+    background-image:url(button_normal_right.png);
 }
 
 .buttonlink:hover
 {
     /*Image Variant*/
-    background-image:url('https://gitcdn.link/repo/Balint66/NeptunSkins/master/Neptune/button_normal_right.png');
+    background-image:url(button_normal_right.png);
 }
 
 .btnRoundedSpan
 {
     /*Image Variant*/
-    background-image:url('https://gitcdn.link/repo/Balint66/NeptunSkins/master/Neptune/button_normal_left.png');
+    background-image:url(button_normal_left.png);
 }
 
 .grid_searchbutton,
 .button
 {
     /*Image Variant*/
-    background-image:url('https://gitcdn.link/repo/Balint66/NeptunSkins/master/Neptune/button_normal_right.png');
+    background-image:url(button_normal_right.png);
 }
 
 .contextitem:hover,
@@ -199,13 +199,13 @@ a:hover
 .contextitemschedule:focus
 {
     /*Image Variant*/
-    background-image:url('https://gitcdn.link/repo/Balint66/NeptunSkins/master/Neptune/submenu_item_hover_01.png');
+    background-image:url(submenu_item_hover_01.png);
 }
 
 ul.menu .menu-hover 
 {
     /*Image Variant*/
-    background-image: url('https://gitcdn.link/repo/Balint66/NeptunSkins/master/Neptune/submenu_item_hover_01.png');
+    background-image: url(submenu_item_hover_01.png);
 }
 
 ul.menu .menu-focus 
@@ -217,40 +217,42 @@ ul.menu .menu-focus
 .tableRowName
 {
     /*Image Variant*/
-    background-image:url('https://gitcdn.link/repo/Balint66/NeptunSkins/master/Neptune/row_init.png');
+    background-image:url(row_init.png);
 }
 
 .tableRowNameSubjectSignin
 {
     /*Image Variant*/
-    background-image:url('https://gitcdn.link/repo/Balint66/NeptunSkins/master/Neptune/row_init.png');
+    background-image:url(row_init.png);
 }
 .messagetable td
 {
     /*Image Variant*/
-	background-image:url('https://gitcdn.link/repo/Balint66/NeptunSkins/master/Neptune/row_init.png');
+	background-image:url(row_init.png);
 }
 
 .divTableCellLabel
 {
     /*Image Variant*/
-    background:url(row_init.png);
+    background-image:url(row_init.png);
 }
 
 .sda .ajax__tab_active .ajax__tab_outer
 {
     /*Image Variant*/
-    background:url(tab_active_right.png) !important;
+    background-image:url(tab_active_right.png) !important;
+    background-repeat: no-repeat;
 }
 
 .sda .ajax__tab_active .ajax__tab_inner
 {
     /*Image Variant*/
-    background:url(tab_active_left.png) !important;
+    background-image:url(tab_active_left.png) !important;
+    background-repeat: no-repeat;
 }
 
 .sda .ajax__tab_active .ajax__tab_tab
 {
     /*Image Variant*/
-    background:url(tab_active_background.png) !important;
+    background-image:url(tab_active_background.png) !important;
 }
