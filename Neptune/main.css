@@ -211,7 +211,7 @@ ul.menu .menu-hover
 ul.menu .menu-focus 
 {
     /*Image Variant*/
-    background:url(submenu_item_hover_01.png);
+    background:url('submenu_item_hover_01.png');
 }
 
 .tableRowName
@@ -234,23 +234,23 @@ ul.menu .menu-focus
 .divTableCellLabel
 {
     /*Image Variant*/
-    background:url(row_init.png);
+    background:url('row_init.png');
 }
 
 .sda .ajax__tab_active .ajax__tab_outer
 {
     /*Image Variant*/
-    background:url(tab_active_right.png) !important;
+    background:url('tab_active_right.png') !important;
 }
 
 .sda .ajax__tab_active .ajax__tab_inner
 {
     /*Image Variant*/
-    background:url(tab_active_left.png) !important;
+    background:url('tab_active_left.png') !important;
 }
 
 .sda .ajax__tab_active .ajax__tab_tab
 {
     /*Image Variant*/
-    background:url(tab_active_background.png) !important;
+    background:url('tab_active_background.png') !important;
 }
