@@ -23,6 +23,14 @@ cssElement.rel = "stylesheet";
 cssElement.type = "text/css";
 cssElement.href = "";
 
+var arrow_up = $("[src=\"App_Themes/Skin_Neptun_GFX/searchpanel_up.png\"]")[0];
+var arrow_down = $("[src=\"App_Themes/Skin_Neptun_GFX/searchpanel_down.png\"]")[0];
+var arrow_right = $("#mainfunctionarrow")[0];
+var crosses = $('[src="App_Themes/Skin_Neptun_GFX/16_ghb_close.png"]');
+var refresers = $('[src="App_Themes/Skin_Neptun_GFX/16_ghb_refresh.png"]');
+
+const base_url = "https://gitcdn.link/cdn/Balint66/NeptunSkins/8bf5620d29cc872e1237f5c9aa5ea3df87accb13/";
+
 window.CountDown = start;
 
 function showHideThemeChooser() {
@@ -83,9 +91,7 @@ function init()
     var PTLogo = document.createElement('td');
     PTLogo.classList = ['footer_sda_logo'];
 
-    console.log(PTLogo);
-
-    logo.insertAdjacentHTML('afterend', PTLogo);
+    logo.insertAdjacentHTML('afterend', PTLogo.outerHTML);
 
 }
 
@@ -111,7 +117,19 @@ function selectSkin(skinName)
 {
     if(skinName === "Anime1")
     {
-        cssElement.href = "https://gitcdn.link/cdn/Balint66/NeptunSkins/7007c7558501da9ca52dc1b50310682955083a7f/Neptune/main.css?v=1";
+        cssElement.href = base_url + "Neptune/main.css?v=1";
+        arrow_right.src = base_url + "Neptune/right_arrow.png";
+        arrow_up.src = base_url + "Neptune/searchpanel_up.png";
+        arrow_down.src = base_url + "Neptune/searchpanel_down.png"
+
+        for(var i = 0; i< crosses.length; i += 1)
+        {
+            crosses[i].src = base_url + "Neptune/16_ghb_close.png";
+        }
+        for(var j = 0; j< refresers.length; j += 1)
+        {
+            refresers[j].src = base_url + "Neptune/16_ghb_refresh.png";
+        }
     }
 }
 
