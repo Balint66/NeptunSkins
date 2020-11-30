@@ -159,13 +159,13 @@ a:hover
 .main_header_r
 {
     /*Image Variant*/
-	background-image:url('https://github.com/boapps/NeptunSkins/blob/master/Neptune/main_header_r.png?raw=true');
+	background-image:url(main_header_r.png);
 }
 
 .main_header_l
 {
     /*Image Variant*/
-	background-image:url('https://github.com/boapps/NeptunSkins/blob/master/Neptune/main_header_l.jpg?raw=true');
+	background-image:url('main_header_l.jpg);
 }
 
 .NeptunChooserSelected
