@@ -140,6 +140,16 @@ a:hover
    background-color: var(--main-color);
 }
 
+#npu_loading
+{
+    background-color: var(--main-color);
+}
+
+.modernui .listview li div.badge
+{
+    background-color: var(--main-color);
+}
+
 /*---------Images---------*/
 
 .main_header_r
@@ -255,4 +265,24 @@ ul.menu .menu-focus
 {
     /*Image Variant*/
     background-image:url(tab_active_background.png) !important;
+}
+
+img #upFilter_searchpanel_expandedimage
+{
+    content: url(searchpanel_up.png);
+}
+
+img #upFilter_searchpanel_expandedimage
+{
+    content: url(searchpanel_up.png);
+}
+
+img #upFilter_searchpanel_expandedimage
+{
+    content: url(searchpanel_down.png);
+}
+
+img #mainfunctionarrow
+{
+    content: url(right_arrow.png);
 }

@@ -23,10 +23,12 @@ cssElement.rel = "stylesheet";
 cssElement.type = "text/css";
 cssElement.href = "";
 
+window.CountDown = start;
+
 function showHideThemeChooser() {
 
 	var col = $('.skinchooserimgcollapsed')
-	
+
     if (col != null) {
         var cho = $('.skinchooserimg')
         cho.width("20px");
@@ -45,6 +47,7 @@ function showHideThemeChooser() {
 function init()
 {
 
+    //Theme chooser fix
     window.ShowHideThemeChooser = showHideThemeChooser;
 
     var skinchooserimg_blue = $('.skinchooserimg_blue');
@@ -72,6 +75,18 @@ function init()
     skinchooserimg_teacher.bind('mouseout', { skinName: 'Teacher' }, hideSkinPreview);
     skinchooserimg_purple.bind('mouseout', { skinName: 'Purple' }, hideSkinPreview);
     skinchooserimg_szte.bind('mouseout', { skinName: 'SZTE' }, hideSkinPreview);
+
+    //Footer addition
+    var footer = $('.footer')[0];
+
+    var logo = footer.children[footer.children.length - 2];
+    var PTLogo = document.createElement('td');
+    PTLogo.classList = ['footer_sda_logo'];
+
+    console.log(PTLogo);
+
+    logo.insertAdjacentHTML('afterend', PTLogo);
+
 }
 
 window.dochangeSkin = function(href, skin)
@@ -142,7 +157,7 @@ function addPreviewsto({parent, alt, name='',src=''})
     parent.appendChild(neptunePreview);
 }
 
-window.addEventListener('load', function() {
+function start() {
 
     var h = document.querySelector('head');
 
@@ -164,4 +179,6 @@ window.addEventListener('load', function() {
     addPreviewsto({parent: previewColl, name:"Anime1", src:"https://i.imgur.com/2HVmKTd.png"})
 
 
-}, false);
+}
+
+//window.addEventListener('load', false);
