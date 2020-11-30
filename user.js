@@ -23,11 +23,11 @@ cssElement.rel = "stylesheet";
 cssElement.type = "text/css";
 cssElement.href = "";
 
-var arrow_up = $("[src=\"App_Themes/Skin_Neptun_GFX/searchpanel_up.png\"]")[0];
-var arrow_down = $("[src=\"App_Themes/Skin_Neptun_GFX/searchpanel_down.png\"]")[0];
+var arrow_up = $("[src$=\"searchpanel_up.png\"]")[0];
+var arrow_down = $("[src$=\"searchpanel_down.png\"]")[0];
 var arrow_right = $("#mainfunctionarrow")[0];
-var crosses = $('[src="App_Themes/Skin_Neptun_GFX/16_ghb_close.png"]');
-var refresers = $('[src="App_Themes/Skin_Neptun_GFX/16_ghb_refresh.png"]');
+var crosses = $('[src$="16_ghb_close.png"]');
+var refresers = $('[src$="16_ghb_refresh.png"]');
 
 const base_url = "https://gitcdn.link/cdn/Balint66/NeptunSkins/8bf5620d29cc872e1237f5c9aa5ea3df87accb13/";
 
