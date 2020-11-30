@@ -139,8 +139,9 @@ function selectSkin(skinName)
 
         for(var i = 0; i< crosses.length; i += 1)
         {
-            crosses[i].src = base_url + "Neptune/16_ghb_close.png";
-        }
+            crosses[i].src = base_url + "svg/16_ghb_close.svg";
+            crosses[i].style = "height: 16px;";
+	}
         for(var j = 0; j< refresers.length; j += 1)
         {
             refresers[j].src = base_url + "Neptune/16_ghb_refresh.png";
