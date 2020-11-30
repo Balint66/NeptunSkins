@@ -29,7 +29,7 @@ var arrow_right = $("#mainfunctionarrow")[0];
 var crosses = $('[src$="16_ghb_close.png"]');
 var refresers = $('[src$="16_ghb_refresh.png"]');
 
-const base_url = "https://gitcdn.link/cdn/Balint66/NeptunSkins/8bf5620d29cc872e1237f5c9aa5ea3df87accb13/";
+const base_url = "https://gitcdn.link/cdn/Balint66/NeptunSkins/d6ef3373b94eea1bbc84a8827597172d8c894a99/";
 
 window.CountDown = start;
 
@@ -54,6 +54,8 @@ function showHideThemeChooser() {
 
 function init()
 {
+
+	console.trace();
 
     //Theme chooser fix
     window.ShowHideThemeChooser = showHideThemeChooser;
@@ -83,6 +85,15 @@ function init()
     skinchooserimg_teacher.bind('mouseout', { skinName: 'Teacher' }, hideSkinPreview);
     skinchooserimg_purple.bind('mouseout', { skinName: 'Purple' }, hideSkinPreview);
     skinchooserimg_szte.bind('mouseout', { skinName: 'SZTE' }, hideSkinPreview);
+
+	    //Custom themes
+    var skinChooser = ( document.getElementsByClassName("skinchooserimgcollapsed") || document.getElementsByClassName("skinchooserimgexpanded") )[0];
+
+    skinChooser.children[0].appendChild(createButton({name: "Anime1"}));
+
+    var previewColl = document.getElementsByClassName("skinsmallimage")[0];
+
+    addPreviewsto({parent: previewColl, name:"Anime1", src:"https://i.imgur.com/2HVmKTd.png"});
 
     //Footer addition
     var footer = $('.footer')[0];
@@ -119,8 +130,12 @@ function selectSkin(skinName)
     {
         cssElement.href = base_url + "Neptune/main.css?v=1";
         arrow_right.src = base_url + "Neptune/right_arrow.png";
-        arrow_up.src = base_url + "Neptune/searchpanel_up.png";
-        arrow_down.src = base_url + "Neptune/searchpanel_down.png"
+		if(arrow_up !== undefined){
+			arrow_up.src = base_url + "Neptune/searchpanel_up.png";
+		}
+		if(arrow_down !== undefined){
+			arrow_down.src = base_url + "Neptune/searchpanel_down.png"
+		}
 
         for(var i = 0; i< crosses.length; i += 1)
         {
@@ -186,17 +201,8 @@ function start() {
 		selectSkin(window.localStorage.getItem('CustomSkin'));
     }
 
-    init();
-
-    var skinChooser = ( document.getElementsByClassName("skinchooserimgcollapsed") || document.getElementsByClassName("skinchooserimgexpanded") )[0];
-
-    skinChooser.children[0].appendChild(createButton({name: "Anime1"}));
-
-    var previewColl = document.getElementsByClassName("skinsmallimage")[0];
-
-    addPreviewsto({parent: previewColl, name:"Anime1", src:"https://i.imgur.com/2HVmKTd.png"})
-
-
 }
+
+init();
 
 //window.addEventListener('load', false);
