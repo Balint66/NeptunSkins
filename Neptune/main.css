@@ -150,6 +150,10 @@ a:hover
     background-color: var(--main-color);
 }
 
+#mb1 li.menu-parent.has-target {
+    color: var(--main-color) !important;
+}
+
 /*---------Images---------*/
 
 .main_header_r
@@ -272,12 +276,7 @@ img #upFilter_searchpanel_expandedimage
     content: url(searchpanel_up.png);
 }
 
-img #upFilter_searchpanel_expandedimage
-{
-    content: url(searchpanel_up.png);
-}
-
-img #upFilter_searchpanel_expandedimage
+img #upFilter_searchpanel_collapsedimage
 {
     content: url(searchpanel_down.png);
 }
