@@ -29,7 +29,7 @@ var arrow_right = $("#mainfunctionarrow")[0];
 var crosses = $('[src$="16_ghb_close.png"]');
 var refresers = $('[src$="16_ghb_refresh.png"]');
 
-const base_url = "https://gitcdn.link/cdn/Balint66/NeptunSkins/d6ef3373b94eea1bbc84a8827597172d8c894a99/";
+const base_url = "https://gitcdn.link/cdn/boapps/NeptunSkins/master/";
 
 window.CountDown = start;
 
@@ -144,7 +144,8 @@ function selectSkin(skinName)
 	}
         for(var j = 0; j< refresers.length; j += 1)
         {
-            refresers[j].src = base_url + "Neptune/16_ghb_refresh.png";
+            refresers[i].src = base_url + "svg/16_ghb_refresh.svg";
+            refresers[i].style = "height: 16px;";
         }
     }
 }
