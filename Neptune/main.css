@@ -165,7 +165,7 @@ a:hover
 .main_header_l
 {
     /*Image Variant*/
-	background-image:url('main_header_l.jpg);
+	background-image:url(main_header_l.jpg);
 }
 
 .NeptunChooserSelected
