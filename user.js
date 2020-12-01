@@ -27,9 +27,9 @@ var arrow_up = $("[src$=\"searchpanel_up.png\"]")[0];
 var arrow_down = $("[src$=\"searchpanel_down.png\"]")[0];
 var arrow_right = $("#mainfunctionarrow")[0];
 var crosses = $('[src$="16_ghb_close.png"]');
-var refresers = $('[src$="16_ghb_refresh.png"]');
+var refreshers = $('[src$="16_ghb_refresh.png"]');
 
-const base_url = "https://gitcdn.link/cdn/Balint66/NeptunSkins/d6ef3373b94eea1bbc84a8827597172d8c894a99/";
+const base_url = "https://gitcdn.link/cdn/Balint66/NeptunSkins/08ffac43ba41278631e551627931540c139c18a5/";
 
 window.CountDown = start;
 
@@ -124,28 +124,25 @@ window.dochangeSkin = function(href, skin)
 
 }
 
-function selectSkin(skinName)
-{
-    if(skinName === "Anime1")
-    {
-        cssElement.href = base_url + "Neptune/main.css?v=1";
-        arrow_right.src = base_url + "Neptune/right_arrow.png";
-		if(arrow_up !== undefined){
+function selectSkin(skinName) {
+  if (skinName === "Anime1") {
+    cssElement.href = base_url + "Neptune/main.css?v=1";
+    arrow_right.src = base_url + "Neptune/right_arrow.png";
+		if (arrow_up !== undefined) {
 			arrow_up.src = base_url + "Neptune/searchpanel_up.png";
 		}
-		if(arrow_down !== undefined){
+		if (arrow_down !== undefined) {
 			arrow_down.src = base_url + "Neptune/searchpanel_down.png"
 		}
-
-        for(var i = 0; i< crosses.length; i += 1)
-        {
-            crosses[i].src = base_url + "Neptune/16_ghb_close.png";
-        }
-        for(var j = 0; j< refresers.length; j += 1)
-        {
-            refresers[j].src = base_url + "Neptune/16_ghb_refresh.png";
-        }
+    for (var i = 0; i< crosses.length; i += 1) {
+      crosses[i].src = base_url + "svg/16_ghb_close.svg";
+      crosses[i].style = "height: 16px;";
     }
+    for (var j = 0; j< refreshers.length; j += 1) {
+      refreshers[j].src = base_url + "svg/16_ghb_refresh.svg";
+      refreshers[j].style = "height: 16px;";
+    }
+  }
 }
 
 function createButton({name='', alt=null})
