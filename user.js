@@ -29,7 +29,7 @@ var arrow_right = $("#mainfunctionarrow")[0];
 var crosses = $('[src$="16_ghb_close.png"]');
 var refreshers = $('[src$="16_ghb_refresh.png"]');
 
-const base_url = "https://gitcdn.link/cdn/Balint66/NeptunSkins/08ffac43ba41278631e551627931540c139c18a5/";
+const base_url = "https://gitcdn.link/repo/Balint66/NeptunSkins/master/";
 
 window.CountDown = start;
 
