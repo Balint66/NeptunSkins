@@ -31,6 +31,16 @@ var refreshers = $('[src$="16_ghb_refresh.png"]');
 
 const base_url = "https://gitcdn.link/repo/Balint66/NeptunSkins/master/";
 
+var updatePanelBase = window.Sys.WebForms.PageRequestManager.prototype._updatePanel;
+
+window.Sys.WebForms.PageRequestManager.prototype._updatePanel = function(a, b)
+{
+  b = b.replace(/"\S+16_ghb_close\.png"/gm, `"${base_url + 'svg/16_ghb_close.svg'}" style="height: 16px;"`);
+  b = b.replace(/"\S+16_ghb_refresh\.png"/gm, `"${base_url + 'svg/16_ghb_refresh.svg'}" style="height: 16px;"`)
+  console.log(b);
+  updatePanelBase(a, b);
+}
+
 window.CountDown = start;
 
 function showHideThemeChooser() {
