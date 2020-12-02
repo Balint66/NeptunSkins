@@ -6,7 +6,7 @@
 ## <p id="hun-neptune">Neptune - Egy téma motor a Neptun weboldalhoz</p>
 
 ****
-Szerintem középiskola óta hallhatjuk a rém meséket a Neptun rendszeréről. Ez a repo nem azért jött létre, hogy ezt a témát kivesézzük, és nem ias arra, hogy aki rátalál, ellene uszítsa.
+Szerintem középiskola óta hallhatjuk a rém meséket a Neptun rendszeréről. Ez a repo nem azért jött létre, hogy ezt a témát kivesézzük, és nem is arra, hogy aki rátalál, ellene uszítsa.
 
 A Neptune az a Neptun rendszerhez íródot téma motor. Ritkán hallani manapság ezt szókapcsolatot, egy kis magyarázatot fűznék hozzá: a téma motorok nem tesznek semmi kártékonyat, nem nézik a jelszavaidat, felhasználó nevedet, szimplán az adott weboldal kinézetét változtatják meg.
 ****
@@ -21,12 +21,12 @@ Próbálunk minél egyszerűbb és modurálisabb témákat írni, hogy bárki k�
 
 - Hyperdimension Neptunia AKA Neptune (✔): a motorunk becenevét adó téma. Az első elkészült témánk.
 - Menhera-chan (🔨)
-- Yotsuba (🔨)
+- Yotsuba (✔)
 - My Littel Pony (🚧)
 - Satania (🚧)
 - Windows XP (🚧)
 - Mézga Kriszta / Mézga Család (🚧)
-- Rózsaszín párduc (🚧)
+- Rózsaszín párduc (🔨)
 - Stallman (🚧)
 - Lain (🚧)
 - Taiga (🚧)
@@ -74,12 +74,12 @@ But Neptune is not just that: it's a perfect partner in crime with [Neptun Power
 
 - Hyperdimension Neptunia AKA Neptune (✔): the theme that we named our engine after. Our first completed theme.
 - Menhera-chan (🔨)
-- Yotsuba (🔨)
+- Yotsuba (✔)
 - My Littel Pony (🚧)
 - Satania (🚧)
 - Windows XP (🚧)
 - Mézga Kriszta / Mézga Család (🚧)
-- Rózsaszín párduc (🚧)
+- Rózsaszín párduc (🔨)
 - Stallman (🚧)
 - Lain (🚧)
 - Taiga (🚧)
