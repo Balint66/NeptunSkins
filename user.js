@@ -21,10 +21,6 @@ var ChooseBase = window.dochangeSkin;
 var cssElement = document.createElement("link");
 var selector = document.createElement('select');
 
-cssElement.rel = "stylesheet";
-cssElement.type = "text/css";
-cssElement.href = "";
-
 selector.id = 'skinSelectorDropdown';
 selector.style.width = "100px";
 selector.style.visibility ='hidden'
@@ -32,9 +28,13 @@ selector.classList = ['skinchooserimg', 'skinchooserimgcollapsed']
 selector.setAttribute("aria-hidden", "false");
 selector.onchange = function()
 {
-  javascript: SkinChoose(this.value);
-  return false;
+	javascript: SkinChoose(this.value);
+	return false;
 }
+
+cssElement.rel = "stylesheet";
+cssElement.type = "text/css";
+cssElement.href = "";
 
 var arrow_up = $("[src$=\"searchpanel_up.png\"]")[0];
 var arrow_down = $("[src$=\"searchpanel_down.png\"]")[0];
@@ -64,7 +64,7 @@ function getCurrentTheme()
   else
   {
     var head = $('head')[0];
-    var theme = head.innerHTML.match(/(?<=App_Themes\/)Skin_Neptun_\S+(?=\/skin_neptun_\S+\.css)/)[0];
+    var theme = head.innerHTML.match(/(?<=App_Themes\/)Skin_Neptun_\S+(?=\/(s|S)kin_(n|N)eptun_\S+\.css)/)[0];
     console.log(theme);
     return theme;
   }
@@ -149,6 +149,7 @@ function init()
 
     //fixing the chooser function by replacing the element.
     var chooserButton = $('#imgSkinChooser')[0];
+    //selector = document.createElement('select');
 
     var clone = chooserButton.cloneNode(true);
     clone.onclick = showHideThemeChooser;
@@ -194,7 +195,7 @@ function init()
 
     for(var i = 0; i < ch.length; i++)
     {
-      
+
       var option = document.createElement('option');
       var name = ch[i].onclick.toString().match(reg)[0];
 	    console.log(name.toLowerCase());
