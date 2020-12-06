@@ -38,7 +38,7 @@ var arrow_right = $("#mainfunctionarrow")[0];
 var crosses = $('[src$="16_ghb_close.png"]');
 var refreshers = $('[src$="16_ghb_refresh.png"]');
 
-const base_url = "https://gitcdn.link/repo/boapps/NeptunSkins/042637239476375e77e83b8c7f288b6858028336/";
+const base_url = "https://gitcdn.link/repo/Balint66/NeptunSkins/042637239476375e77e83b8c7f288b6858028336/";
 var skins = ["Neptune", "Yotsuba"];
 
 var updatePanelBase = window.Sys.WebForms.PageRequestManager.prototype._updatePanel;
