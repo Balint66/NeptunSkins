@@ -146,3 +146,8 @@ a:hover
 #mb1 li.menu-parent.has-target {
     color: var(--main-color) !important;
 }
+
+.grid_searchbutton, .button
+{
+    background-color: var(--main-color);
+}
