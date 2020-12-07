@@ -44,7 +44,7 @@ var skins = ["Neptune", "Yotsuba"];
 var commoncss = document.createElement("link"); 
 commoncss.rel = "stylesheet";
 commoncss.type = "text/css";
-commoncss.href = base_url + "/common/main.css";
+commoncss.href = base_url + "common/main.css";
 
 var updatePanelBase = window.Sys.WebForms.PageRequestManager.prototype._updatePanel;
 
