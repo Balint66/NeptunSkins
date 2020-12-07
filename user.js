@@ -49,8 +49,9 @@ commoncss.href = base_url + "common/main.css";
 var updatePanelBase = window.Sys.WebForms.PageRequestManager.prototype._updatePanel;
 
 window.Sys.WebForms.PageRequestManager.prototype._updatePanel = function(a, b) {
-  b = b.replace(/"\S+16_ghb_close\.png"/gm, `"${base_url + 'svg/16_ghb_close.svg'}" style="height: 16px;"`);
-  b = b.replace(/"\S+16_ghb_refresh\.png"/gm, `"${base_url + 'svg/16_ghb_refresh.svg'}" style="height: 16px;"`);
+  var currentTheme = getCurrentTheme();
+  b = b.replace(/"\S+16_ghb_close\.png"/gm, `"${base_url + currentTheme + '/16_ghb_close.svg'}" style="height: 16px;"`);
+  b = b.replace(/"\S+16_ghb_refresh\.png"/gm, `"${base_url + currentTheme + '/16_ghb_refresh.svg'}" style="height: 16px;"`);
   updatePanelBase(a, b);
 }
 
@@ -111,25 +112,21 @@ window.dochangeSkin = function(href, skin) {
 }
 
 function selectSkin(skinName) {
-  if (skinName === "Neptune") {
-    css.href = base_url + "Neptune/main.css?v=1";
-    arrow_right.src = base_url + "Neptune/right_arrow.png";
-    if (arrow_up !== undefined) {
-      arrow_up.src = base_url + "Neptune/searchpanel_up.png";
-    }
-    if (arrow_down !== undefined) {
-      arrow_down.src = base_url + "Neptune/searchpanel_down.png"
-    }
-    for (var i = 0; i < crosses.length; i += 1) {
-      crosses[i].src = base_url + "svg/16_ghb_close.svg";
-      crosses[i].style = "height: 16px;";
-    }
-    for (var j = 0; j < refreshers.length; j += 1) {
-      refreshers[j].src = base_url + "svg/16_ghb_refresh.svg";
-      refreshers[j].style = "height: 16px;";
-    }
-  } else if (skinName === "Yotsuba") {
-    css.href = base_url + "Yotsuba/main.css?v=1";
+  css.href = base_url + skinName + "/main.css?v=1";
+  arrow_right.src = base_url + skinName + "/right_arrow.png";
+  if (arrow_up !== undefined) {
+    arrow_up.src = base_url + skinName + "/searchpanel_up.png";
+  }
+  if (arrow_down !== undefined) {
+    arrow_down.src = base_url + skinName + "/searchpanel_down.png"
+  }
+  for (var i = 0; i < crosses.length; i += 1) {
+    crosses[i].src = base_url + skinName + "/16_ghb_close.svg";
+    crosses[i].style = "height: 16px;";
+  }
+  for (var j = 0; j < refreshers.length; j += 1) {
+    refreshers[j].src = base_url + skinName + "/16_ghb_refresh.svg";
+    refreshers[j].style = "height: 16px;";
   }
 }
 
