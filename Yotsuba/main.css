@@ -1,3 +1,8 @@
+:root
+{
+    --main-color: #282828
+}
+
 ul.menubar li.menu-parent {
     background-image: none;
     padding: 10px;

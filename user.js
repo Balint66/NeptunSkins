@@ -41,6 +41,11 @@ var refreshers = $('[src$="16_ghb_refresh.png"]');
 const base_url = "https://gitcdn.link/repo/Balint66/NeptunSkins/master/";
 var skins = ["Neptune", "Yotsuba"];
 
+var commoncss = document.createElement("link"); 
+commoncss.rel = "stylesheet";
+commoncss.type = "text/css";
+commoncss.href = base_url + "/common/main.css";
+
 var updatePanelBase = window.Sys.WebForms.PageRequestManager.prototype._updatePanel;
 
 window.Sys.WebForms.PageRequestManager.prototype._updatePanel = function(a, b) {
@@ -130,9 +135,12 @@ function selectSkin(skinName) {
 
 function
 init() {
+
+  //add common css
+  var h = document.querySelector('head');
+  h.appendChild(commoncss);
   // fixing the chooser function by replacing the element.
   var chooserButton = $('#imgSkinChooser')[0];
-  // selector = document.createElement('select');
 
   var clone = chooserButton.cloneNode(true);
   clone.onclick = showHideThemeChooser;
