@@ -49,7 +49,7 @@ commoncss.href = base_url + "common/main.css";
 var updatePanelBase = window.Sys.WebForms.PageRequestManager.prototype._updatePanel;
 
 window.Sys.WebForms.PageRequestManager.prototype._updatePanel = function(a, b) {
-  var currentTheme = getCurrentTheme();
+  var currentTheme = getCurrentTheme().split('_').slice(-1);
   b = b.replace(/"\S+16_ghb_close\.png"/gm, `"${base_url + currentTheme + '/16_ghb_close.svg'}" style="height: 16px;"`);
   b = b.replace(/"\S+16_ghb_refresh\.png"/gm, `"${base_url + currentTheme + '/16_ghb_refresh.svg'}" style="height: 16px;"`);
   updatePanelBase(a, b);
