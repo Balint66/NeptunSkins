@@ -3,7 +3,7 @@
     background-image: url(../common/options.svg) !important; 
 }
 
-#upFilter_cmbSubjects option .npu_subscribed
+#upFilter_cmbSubjects option.npu_subscribed
 {
     background-color: var(--main-color);
 }

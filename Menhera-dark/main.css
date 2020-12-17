@@ -90,7 +90,7 @@ body
 
 #h_exams_gridExamList_bodytable tr.gridrow_blue td
 {
-    background-color: var(--main-color)
+    background-color: var(--main-color) !important;
 }
 
 ul.menubar li.menu-parent {
