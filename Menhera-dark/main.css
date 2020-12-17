@@ -1,8 +1,8 @@
 :root
 {
     --link-color: #d6bdff;
-    --main-color: #4c396b;
-    --background-color: #383050;
+    --main-color: #383050;
+    --background-color: #4c396b;
 }
 body * {
     background-image: none !important;
@@ -70,7 +70,22 @@ tbody tr.no_style td.no_style {
 }
 
 body {
-    background: var(--background-color);
+    background-color: var(--background-color);
+}
+
+.sp_body 
+{
+    background-color: var(--background-color);
+}
+
+.scrollablebody tr
+{
+    background-color: var(--background-color);
+}
+
+.calendar .Day
+{
+    background-color: var(--background-color) !important;
 }
 
 a, a:hover {
