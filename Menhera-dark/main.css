@@ -39,6 +39,16 @@ body
     color: whitesmoke;
 }
 
+#upFilter_bodytable 
+{
+    color: whitesmoke;
+}
+
+.table_body 
+{
+    color: whitesmoke;
+}
+
 /* ---- fonts ---- */
 
 ul.menubar li.menu-parent {
@@ -92,6 +102,11 @@ ul.menu li.menu-item {
 
 #function_tableheader {
     background: var(--background-color);
+}
+
+.table_body
+{
+    background-color: var(--background-color);
 }
 
 .function {
