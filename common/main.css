@@ -1,3 +1,8 @@
+.contextcell_sel, .contextcell
+{
+    background-image: url(../common/options.svg);
+}
+
 .newsTable span.link:hover
 {
     /*Color variant*/
@@ -150,4 +155,15 @@ a:hover
 .grid_searchbutton, .button
 {
     background-color: var(--main-color);
+}
+
+.modernui .tile .brand > .badge.activity,
+.modernui .tile .tile-status > .badge.activity
+{
+    background-color: var(--main-color);
+}
+
+.link 
+{
+    color: var(--main-color) !important;
 }
