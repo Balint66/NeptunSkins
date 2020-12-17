@@ -5,6 +5,7 @@
     --background-color: #1c1828;
     --main-fontcolor: whitesmoke;
 }
+
 body * {
     background-image: none !important;
 }
@@ -76,7 +77,7 @@ body
 
 .scrollablebody tr
 {
-    color: whitesmoke;
+    color: var(--main-fontcolor);
     background-color: var(--background-color);
 }
 
@@ -86,6 +87,11 @@ body
 }
 
 /* ---- fonts ---- */
+
+#h_exams_gridExamList_bodytable tr.gridrow_blue td
+{
+    background-color: var(--main-color)
+}
 
 ul.menubar li.menu-parent {
     background-image: none;

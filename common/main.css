@@ -3,7 +3,7 @@
     background-image: url(../common/options.svg) !important; 
 }
 
-.npu_subscribed
+#upFilter_cmbSubjects option .npu_subscribed
 {
     background-color: var(--main-color);
 }
@@ -168,7 +168,7 @@ a:hover
     color: var(--main-color) !important;
 }
 
-.grid_searchbutton, .button
+.main_search .grid_searchbutton, .main_search .button
 {
     background-color: var(--main-color);
 }
