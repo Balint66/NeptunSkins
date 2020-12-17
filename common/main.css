@@ -1,6 +1,6 @@
 .contextcell_sel, .contextcell
 {
-    background-image: url(../common/options.svg);
+    background-image: url(../common/options.svg) !important; 
 }
 
 .newsTable span.link:hover
