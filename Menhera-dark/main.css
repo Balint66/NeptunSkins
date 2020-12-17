@@ -69,6 +69,11 @@ body
     background-color: var(--background-color);
 }
 
+.caption
+{
+    color: whitesmoke;
+}
+
 /* ---- fonts ---- */
 
 ul.menubar li.menu-parent {
@@ -80,6 +85,11 @@ ul.menubar li.menu-parent {
 .top_menu_wrapper {
     border: whitesmoke 1px solid;
     background: var(--background-color);
+}
+
+.main_search
+{
+    border: whitesmoke 1px solid;
 }
 
 #panHeader * {
