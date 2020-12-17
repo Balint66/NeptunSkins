@@ -24,6 +24,21 @@ body
     color: white !important;
 }
 
+.ui-widget-content
+{
+    color: whitesmoke;
+}
+
+.top_training
+{
+    color: whitesmoke;
+}
+
+.top_logout
+{
+    color: whitesmoke;
+}
+
 /* ---- fonts ---- */
 
 ul.menubar li.menu-parent {
@@ -47,6 +62,10 @@ ul.menubar li.menu-parent {
 
 ul .menu {
     border: whitesmoke 1px solid;
+    background: var(--background-color);
+}
+.ui-widget-content
+{
     background: var(--background-color);
 }
 
