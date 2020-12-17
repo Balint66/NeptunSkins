@@ -2,7 +2,7 @@
 {
     --link-color: #d6bdff;
     --main-color: #4c396b;
-    --background-color: #383050;
+    --background-color: #1c1828;
 }
 body * {
     background-image: none !important;
@@ -13,6 +13,17 @@ ul.menu li.menu-item
 {
     color: whitesmoke;
 }
+
+body
+{
+    color: whitesmoke;
+}
+
+#mb1 li.menu-parent
+{
+    color: white !important;
+}
+
 /* ---- fonts ---- */
 
 ul.menubar li.menu-parent {
@@ -91,6 +102,16 @@ body {
 }
 
 .calendar .Day
+{
+    background-color: var(--background-color) !important;
+}
+
+.calendar .SelectedDay
+{
+    background-color: var(--background-color) !important;
+}
+
+.calendar .DayHeader
 {
     background-color: var(--background-color) !important;
 }
