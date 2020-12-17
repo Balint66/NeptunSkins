@@ -1,21 +1,26 @@
 :root
 {
-    --main-color: #282828
+    --link-color: #d6bdff;
+    --main-color: #4c396b;
+    --background-color: #383050;
+}
+body * {
+    background-image: none !important;
 }
 
 ul.menubar li.menu-parent {
     background-image: none;
     padding: 10px;
-    color: #800;
+    color: var(--link-color);
 }
 
 .top_menu_wrapper {
     border: black 1px solid;
-    background: #fca;
+    background: var(--background-color);
 }
 
 #panHeader * {
-    background: #ffe;
+    background: var(--background-color);
 }
 
 #panHeader {
@@ -24,12 +29,12 @@ ul.menubar li.menu-parent {
 
 ul .menu {
     border: black 1px solid;
-    background: #fef;
+    background: var(--background-color);
 }
 
 ul.menu .menu-hover {
     background-image: none;
-    background: #800;
+    background: var(--link-color);
 }
 
 ul.menu li.menu-item {
@@ -41,15 +46,15 @@ ul.menu li.menu-item {
 }
 
 #upMenuCaption_menucaption {
-    color: #800;
+    color: var(--link-color);
 }
 
 .function_table {
-    background: #fff;
+    background: var(--background-color);
 }
 
 #function_tableheader {
-    background: #fca;
+    background: var(--background-color);
 }
 
 .function {
@@ -65,25 +70,25 @@ tbody tr.no_style td.no_style {
 }
 
 body {
-    background: #ffe;
+    background: var(--background-color);
 }
 
 a, a:hover {
-    color: #800 !important;;
+    color: var(--link-color) !important;;
 }
 
 #upBoxes_leftbox>div {
     border: black 1px solid;
     margin-bottom: 8px;
-    background-color: #fff;
+    background-color: var(--background-color);
 }
 
 .Gadget>tbody>tr:first-child * {
-    color: #800;
+    color: var(--link-color);
 }
 
 .Gadget>tbody>tr:first-child {
-    background: #fca;
+    background: var(--background-color);
 }
 
 .gadgettitleimage {
@@ -109,10 +114,6 @@ a, a:hover {
     border: none;
 }
 
-body * {
-    background-image: none !important;
-}
-
 .langskinpartially {
     right: 0;
 }
@@ -126,17 +127,17 @@ body * {
 }
 
 .main_header_l {
-    background-image: url("https://i.imgur.com/xDwCSqh.png") !important;
+    /*TODO:NEptun Image background-image: url("https://i.imgur.com/xDwCSqh.png") !important;*/
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
 }
 
 .main_header_r_table_skin {
-    background: url(https://cdn140.picsart.com/262454714023212.png?type=webp&to=min&r=640) !important;
+    background: url(https://stickershop.line-scdn.net/stickershop/v1/sticker/28070599/android/sticker.png) !important;
     background-size: contain !important;
     background-repeat: no-repeat !important;
     margin: 30px;
-    width: 300px;
+    width: 224px;
     float: right;
 }
