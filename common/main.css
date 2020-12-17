@@ -3,6 +3,16 @@
     background-image: url(../common/options.svg) !important; 
 }
 
+.npu_subscribed
+{
+    background-color: var(--main-color);
+}
+
+.tg-col
+{
+    background-color: var(--background-color);
+}
+
 .newsTable span.link:hover
 {
     /*Color variant*/
