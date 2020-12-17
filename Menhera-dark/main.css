@@ -51,6 +51,16 @@ body
     background-color: var(--background-color);
 }
 
+.tableRowName
+{
+    color: whitesmoke;
+}
+
+.tableRowData
+{
+    color: whitesmoke;
+}
+
 .header
 {
     color: white;
@@ -89,7 +99,7 @@ ul.menubar li.menu-parent {
 
 .main_search
 {
-    border: whitesmoke 1px solid;
+    border: whitesmoke 1px solid !important;
 }
 
 #panHeader * {
