@@ -13,6 +13,11 @@
     background-color: var(--background-color);
 }
 
+#skinSelectorDropdown
+{
+    color: var(--main-fontcolor);
+}
+
 .newsTable span.link:hover
 {
     /*Color variant*/
