@@ -39,14 +39,34 @@ body
     color: whitesmoke;
 }
 
-#upFilter_bodytable 
+.main_search *
 {
     color: whitesmoke;
+    background-color: var(--background-color);
 }
 
 .table_body 
 {
     color: whitesmoke;
+    background-color: var(--background-color);
+}
+
+.header
+{
+    color: white;
+    background-color: var(--background-color);
+}
+
+.headerWithCheckbox
+{
+    color: white;
+    background-color: var(--background-color);
+}
+
+.scrollablebody tr
+{
+    color: whitesmoke;
+    background-color: var(--background-color);
 }
 
 /* ---- fonts ---- */
@@ -104,11 +124,6 @@ ul.menu li.menu-item {
     background: var(--background-color);
 }
 
-.table_body
-{
-    background-color: var(--background-color);
-}
-
 .function {
     border: whitesmoke 1px solid;
 }
@@ -126,11 +141,6 @@ body {
 }
 
 .sp_body 
-{
-    background-color: var(--background-color);
-}
-
-.scrollablebody tr
 {
     background-color: var(--background-color);
 }
