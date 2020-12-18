@@ -22,6 +22,10 @@
 {
     color: var(--main-fontcolor);
 }
+#languageSelectorDropdown
+{
+    color: var(--main-fontcolor);
+}
 
 .newsTable span.link:hover
 {
