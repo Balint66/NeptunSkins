@@ -97,7 +97,7 @@ body
 
 #h_markbook_gridIndexEntry_bodytable tr.SubjectCompletedRow td
 {
-    background-color: (--secondary-background-color) !important;
+    background-color: var(--secondary-background-color) !important;
 }
 
 ul.menubar li.menu-parent {
