@@ -45,7 +45,7 @@ body
 .main_search *
 {
     color: var(--main-fontcolor);
-    background-color: var(--background-color);
+    background-color: var(--main-fontcolor);
 }
 
 .table_body 

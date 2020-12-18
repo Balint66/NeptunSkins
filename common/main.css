@@ -178,6 +178,11 @@ a:hover
     background-color: var(--main-color);
 }
 
+.main_search .grid_searchbutton, .main_search .button
+{
+    background-color: var(--background-color);
+}
+
 .modernui .tile .brand > .badge.activity,
 .modernui .tile .tile-status > .badge.activity
 {
