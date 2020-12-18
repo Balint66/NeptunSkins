@@ -3,9 +3,14 @@
     background-image: url(../common/options.svg) !important; 
 }
 
+.tooltipDetails
+{
+    background-color: var(--background-color);
+}
+
 #upFilter_cmbSubjects option.npu_subscribed
 {
-    background-color: var(--main-color);
+    background-color: var(--main-color)  !important;
 }
 
 .tg-col
