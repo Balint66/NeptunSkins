@@ -1,10 +1,10 @@
 :root
 {
     --link-color: #d6bdff;
-    --main-color: #4c396b;
-    --background-color: #1c1828;
-    --main-fontcolor: whitesmoke;
-    --secondary-background-color: #4c2a6a;
+    --main-color: #1c1828;
+    --background-color:#ece0ff;
+    --main-fontcolor: black;
+    --secondary-background-color: #8461a3;
 }
 
 body * {
@@ -255,7 +255,7 @@ a, a:hover {
 }
 
 .main_header_r_table_skin {
-    background: url(https://stickershop.line-scdn.net/stickershop/v1/sticker/28070599/android/sticker.png) !important;
+    background: url(https://stickershop.line-scdn.net/stickershop/v1/sticker/28070598/android/sticker.png) !important;
     background-size: contain !important;
     background-repeat: no-repeat !important;
     margin: 30px;
