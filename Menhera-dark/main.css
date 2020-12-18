@@ -94,9 +94,9 @@ body
     color: var(--main-fontcolor) !important;
 }
 
-.SubjectCompletedRow
+#h_markbook_gridIndexEntry_bodytable tr.SubjectCompletedRow td
 {
-    background-color: black;
+    background-color: black !important;
 }
 
 ul.menubar li.menu-parent {
