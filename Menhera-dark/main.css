@@ -90,8 +90,13 @@ body
 
 #h_exams_gridExamList_bodytable tr.gridrow_blue td
 {
-    background-color: var(--main-color) !important;
-    color: var(--main-fontcolor);
+    background-color: black !important;
+    color: var(--main-fontcolor) !important;
+}
+
+.SubjectCompletedRow
+{
+    background-color: black;
 }
 
 ul.menubar li.menu-parent {

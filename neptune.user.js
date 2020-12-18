@@ -1,6 +1,6 @@
 // ==UserScript==
-// @name        Neptune
-// @namespace   Violentmonkey Scripts
+// @name           Neptune
+// @namespace      Violentmonkey Scripts
 // @include        https://*neptun*/*hallgato*/*
 // @include        https://*neptun*/*Hallgatoi*/*
 // @include        https://*neptun*/*oktato*/*
@@ -10,10 +10,10 @@
 // @include        https://nappw.dfad.duf.hu/hallgato/*
 // @include        https://host.sdakft.hu/*
 // @include        https://neptun.ejf.hu/ejfhw/*
-// @grant       none
-// @version     2.0
-// @author      --
-// @description 11/24/2020, 3:09:00 PM
+// @grant          none
+// @version        2.0
+// @author         --
+// @description    11/24/2020, 3:09:00 PM
 // ==/UserScript==
 
 var $ = window.jQuery;
