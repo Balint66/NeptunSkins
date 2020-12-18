@@ -2,7 +2,7 @@
 {
     --link-color: #54466b;
     --main-color: #937da7;
-    --background-color:#cac7d1;
+    --background-color: #ccd;
     --main-fontcolor: black;
     --secondary-background-color: #ae9ccc;
 }
@@ -248,7 +248,7 @@ a, a:hover {
 }
 
 .main_header_r_table_skin {
-    background: url(https://stickershop.line-scdn.net/stickershop/v1/sticker/28070598/android/sticker.png) !important;
+    background: url(menhera_morning.webp) !important;
     background-size: contain !important;
     background-repeat: no-repeat !important;
     margin: 30px;
