@@ -4,6 +4,7 @@
     --main-color: #4c396b;
     --background-color: #1c1828;
     --main-fontcolor: whitesmoke;
+    --secondary-background-color: #4c2a6a;
 }
 
 body * {
@@ -90,13 +91,13 @@ body
 
 #h_exams_gridExamList_bodytable tr.gridrow_blue td
 {
-    background-color: black !important;
+    background-color:var(--secondary-background-color) !important;
     color: var(--main-fontcolor) !important;
 }
 
 #h_markbook_gridIndexEntry_bodytable tr.SubjectCompletedRow td
 {
-    background-color: black !important;
+    background-color: (--secondary-background-color) !important;
 }
 
 ul.menubar li.menu-parent {
