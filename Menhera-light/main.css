@@ -1,10 +1,10 @@
 :root
 {
     --link-color: #f1e9ff;
-    --main-color: #8461a3;
-    --background-color:#ece0ff;
+    --main-color: #937da7;
+    --background-color:#cac7d1;
     --main-fontcolor: black;
-    --secondary-background-color: #d6bdff;
+    --secondary-background-color: #ae9ccc;
 }
 
 body * {
@@ -20,11 +20,6 @@ ul.menu li.menu-item
 body
 {
     color: var(--main-fontcolor);
-}
-
-#mb1 li.menu-parent
-{
-    color: white !important;
 }
 
 .ui-widget-content
@@ -66,13 +61,11 @@ body
 
 .header
 {
-    color: white;
     background-color: var(--background-color);
 }
 
 .headerWithCheckbox
 {
-    color: white;
     background-color: var(--background-color);
 }
 
