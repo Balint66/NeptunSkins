@@ -145,6 +145,12 @@ ul.menu .menu-hover {
     color: var(--main-fontcolor);
 }
 
+ul.menu > .menu-hover > a:hover {
+    background-image: none;
+    background: var(--link-color);
+    color: var(--main-fontcolor);
+}
+
 ul.menu li.menu-item {
     border: none;
 }
