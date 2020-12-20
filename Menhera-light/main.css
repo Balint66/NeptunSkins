@@ -75,6 +75,12 @@ body
     background-color: var(--background-color);
 }
 
+.scrollablebody > .Row1_Bold tr
+{
+    color: var(--main-fontcolor);
+    background-color: var(--secondary-background-color);
+}
+
 .caption
 {
     color: var(--main-fontcolor);
@@ -129,6 +135,7 @@ ul .menu {
 ul.menu .menu-hover {
     background-image: none;
     background: var(--link-color);
+    color: var(--main-fontcolor);
 }
 
 ul.menu li.menu-item {
@@ -254,4 +261,10 @@ a, a:hover {
     margin: 30px;
     width: 224px;
     float: right;
+}
+
+#panCloseHeader {
+    width: 50px;
+    height: 10px;
+    background: var(--main-fontcolor);
 }
