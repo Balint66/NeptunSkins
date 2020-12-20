@@ -146,7 +146,7 @@ ul.menu .menu-hover {
 }
 
 ul.menu > .menu-hover > a:hover {
-    color: var(--main-fontcolor) !important;
+    color: var(--main-color) !important;
 }
 
 ul.menu li.menu-item {
