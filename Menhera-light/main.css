@@ -134,8 +134,7 @@ ul .menu {
 
 ul.menu .menu-hover {
     background-image: none;
-    background: var(--link-color) !important;
-    color: var(--main-fontcolor);
+    background: var(--link-color);
 }
 
 ul.menu li.menu-item {
