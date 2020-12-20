@@ -12,7 +12,7 @@ body * {
 }
 
 /* ---- fonts ---- */
-ul.menu li.menu-item
+ul.menu, li.menu-item
 {
     color: var(--main-fontcolor);
 }
@@ -42,7 +42,7 @@ body
     color: var(--main-fontcolor);
 }
 
-.main_search *
+.main_search, .main_search *
 {
     color: var(--main-fontcolor);
     background-color: var(--main-color);
@@ -86,6 +86,34 @@ body
 {
     color: var(--main-fontcolor);
     background-color: var(--secondary-background-color);
+}
+
+#upTraining_topname {
+    color: var(--main-fontcolor);
+    background: var(--main-fontcolor);
+}
+
+.top_logout_link {
+    margin-bottom: 40px;
+}
+
+#panCloseHeader {
+    width: 60px;
+    background: var(--main-fontcolor);
+}
+
+.gridbutton {
+    background: var(--main-color) !important;
+}
+
+.gridbutton, .button {
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+
+#upTraining_topname:hover {
+    color: var(--background-color);
+    background: var(--main-fontcolor);
 }
 
 .caption
@@ -185,7 +213,7 @@ body {
     background-color: var(--background-color);
 }
 
-.sp_body 
+.sp_body
 {
     background-color: var(--background-color);
 }
@@ -227,6 +255,10 @@ a, a:hover {
     visibility: collapse;
 }
 
+.GadgetHeaderPanelButtonLeftMenu {
+  visibility: collapse;
+}
+
 .boxestable {
     margin-top: 0 !important;
 }
@@ -243,7 +275,7 @@ a, a:hover {
 }
 
 .function_table * {
-    border: none;
+    /*! border: none; */
 }
 
 .langskinpartially {
@@ -252,6 +284,10 @@ a, a:hover {
 
 .langskinpartially div{
     visibility: collapse;
+}
+
+.menu-parent .menu .menu-hover {
+  color: #000 !important;
 }
 
 .upChooser, .main_header_l * {
@@ -274,8 +310,32 @@ a, a:hover {
     float: right;
 }
 
-#panCloseHeader {
-    width: 50px;
-    height: 10px;
-    background: var(--main-fontcolor);
+#c_messages_gridMessages_bodytable tbody.scrollablebody tr.Row1_Bold * {
+    background-color: var(--background-color) !important;
+}
+
+table.table_body, #c_messages_gridMessages_bodytable tbody.scrollablebody tr {
+    border: 1px solid var(--main-fontcolor);
+}
+
+#c_messages_gridMessages_bodytable tbody.scrollablebody tr * {
+    background-color: var(--main-color) !important;
+    color: var(--main-fontcolor) !important;
+}
+
+#c_messages_gridMessages_bodytable tbody.scrollablebody tr:hover * {
+    background-color: #4c4858 !important;
+}
+
+table.table_body thead tr th.header:first-child {
+    padding-top: 10px !important;
+}
+
+#calendar_calendar tr td * {
+    color: var(--main-fontcolor) !important;
+}
+
+.calendar tr .TodayDay {
+    background-color: var(--main-color) !important;
+    border: 1px solid #eee !important;
 }
