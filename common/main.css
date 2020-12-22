@@ -199,6 +199,11 @@ a:hover
     color: var(--main-color) !important;
 }
 
+.ui-widget-overlay
+{
+    background-color: var(--ovarlay-color);
+}
+
 /* ---- positioning ---- */
 .langskinpartially
 {

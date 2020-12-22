@@ -6,7 +6,8 @@
     --main-fontcolor: whitesmoke;
     --secondary-background-color: #4c2a6a;
     --secondary-fontcolor: #eee;
-    --dark-font-color : var(var(--background-color));
+    --dark-font-color : var(--background-color);
+    --ovarlay-color :#222;
 }
 
 body * {
