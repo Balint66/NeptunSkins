@@ -4,6 +4,7 @@
     --main-color: #937da7;
     --background-color: #ccd;
     --main-fontcolor: black;
+    --secondary-fontcolor: #222;
     --secondary-background-color: #ae9ccc;
 }
 
@@ -110,7 +111,7 @@ body
 }
 
 #upTraining_topname:hover {
-    color: var(--dark-font-color);
+    color: var(--secondary-background-color);
     background: var(--main-fontcolor);
 }
 
