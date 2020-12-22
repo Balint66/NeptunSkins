@@ -177,9 +177,10 @@ a:hover
     color: var(--main-color) !important;
 }
 
-.main_search .grid_searchbutton, .main_search .button
+.main_search .grid_searchbutton, .main_search .button, .button
 {
     background-color: var(--main-color);
+    border: none;
 }
 
 .main_search .grid_searchbutton, .main_search .button
@@ -197,3 +198,10 @@ a:hover
 {
     color: var(--main-color) !important;
 }
+
+/* ---- positioning ---- */
+.langskinpartially
+{
+    top: 195px;
+}
+/* ---- positioning ---- */
