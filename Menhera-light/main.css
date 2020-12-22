@@ -12,7 +12,7 @@ body * {
 }
 
 /* ---- fonts ---- */
-ul.menu li.menu-item
+ul.menu, li.menu-item
 {
     color: var(--main-fontcolor);
 }
@@ -20,6 +20,11 @@ ul.menu li.menu-item
 body
 {
     color: var(--main-fontcolor);
+}
+
+#mb1 li.menu-parent
+{
+    color: var(--secondary-fontcolor) !important;
 }
 
 .ui-widget-content
@@ -37,7 +42,7 @@ body
     color: var(--main-fontcolor);
 }
 
-.main_search *
+.main_search, .main_search *
 {
     color: var(--main-fontcolor);
     background-color: var(--main-color);
@@ -79,6 +84,34 @@ body
 {
     color: var(--main-fontcolor);
     background-color: var(--secondary-background-color);
+}
+
+#upTraining_topname {
+    color: var(--main-fontcolor);
+    background: var(--main-fontcolor);
+}
+
+.top_logout_link {
+    margin-bottom: 40px;
+}
+
+#panCloseHeader {
+    width: 60px;
+    background: var(--main-fontcolor);
+}
+
+.gridbutton {
+    background: var(--main-color) !important;
+}
+
+.gridbutton, .button {
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+
+#upTraining_topname:hover {
+    color: var(--dark-font-color);
+    background: var(--main-fontcolor);
 }
 
 .caption
@@ -173,7 +206,7 @@ body {
     background-color: var(--background-color);
 }
 
-.sp_body 
+.sp_body
 {
     background-color: var(--background-color);
 }
@@ -212,6 +245,10 @@ a, a:hover {
 }
 
 .gadgettitleimage {
+    visibility: collapse;
+}
+
+.GadgetHeaderPanelButtonLeftMenu {
     visibility: collapse;
 }
 
@@ -262,8 +299,37 @@ a, a:hover {
     float: right;
 }
 
-#panCloseHeader {
-    width: 50px;
-    height: 10px;
-    background: var(--main-fontcolor);
+#c_messages_gridMessages_bodytable tbody.scrollablebody tr.Row1_Bold * {
+    background-color: var(--main-color) !important;
+}
+
+table.table_body, #c_messages_gridMessages_bodytable tbody.scrollablebody tr {
+    border: 1px solid var(--main-fontcolor);
+}
+
+#c_messages_gridMessages_bodytable tbody.scrollablebody tr * {
+    background-color: var(--background-color) !important;
+    color: var(--main-fontcolor) !important;
+}
+
+#c_messages_gridMessages_bodytable tbody.scrollablebody tr:hover * {
+    background-color: #4c4858 !important;
+}
+
+table.table_body thead tr th.header:first-child {
+    padding-top: 10px !important;
+}
+
+#calendar_calendar tr td * {
+    color: var(--main-fontcolor) !important;
+}
+
+.calendar tr .TodayDay {
+    background-color: var(--main-color) !important;
+    border: 1px solid var(--secondary-fontcolor) !important;
+}
+
+.readmessage_editor
+{
+    background-color: var(--background-color);
 }

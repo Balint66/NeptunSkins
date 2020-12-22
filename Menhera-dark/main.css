@@ -5,6 +5,8 @@
     --background-color: #1c1828;
     --main-fontcolor: whitesmoke;
     --secondary-background-color: #4c2a6a;
+    --secondary-fontcolor: #eee;
+    --dark-font-color : var(var(--background-color));
 }
 
 body * {
@@ -24,7 +26,7 @@ body
 
 #mb1 li.menu-parent
 {
-    color: white !important;
+    color: var(--secondary-fontcolor) !important;
 }
 
 .ui-widget-content
@@ -66,13 +68,13 @@ body
 
 .header
 {
-    color: white;
+    color: var(--secondary-fontcolor);
     background-color: var(--background-color);
 }
 
 .headerWithCheckbox
 {
-    color: white;
+    color: var(--secondary-fontcolor);
     background-color: var(--background-color);
 }
 
@@ -112,7 +114,7 @@ body
 }
 
 #upTraining_topname:hover {
-    color: var(--background-color);
+    color: var(--dark-font-color);
     background: var(--main-fontcolor);
 }
 
@@ -256,7 +258,7 @@ a, a:hover {
 }
 
 .GadgetHeaderPanelButtonLeftMenu {
-  visibility: collapse;
+    visibility: collapse;
 }
 
 .boxestable {
@@ -287,7 +289,7 @@ a, a:hover {
 }
 
 .menu-parent .menu .menu-hover {
-  color: #000 !important;
+    color: var(--dark-font-color) !important;
 }
 
 .upChooser, .main_header_l * {
@@ -311,7 +313,7 @@ a, a:hover {
 }
 
 #c_messages_gridMessages_bodytable tbody.scrollablebody tr.Row1_Bold * {
-    background-color: var(--background-color) !important;
+    background-color: var(--main-color) !important;
 }
 
 table.table_body, #c_messages_gridMessages_bodytable tbody.scrollablebody tr {
@@ -319,7 +321,7 @@ table.table_body, #c_messages_gridMessages_bodytable tbody.scrollablebody tr {
 }
 
 #c_messages_gridMessages_bodytable tbody.scrollablebody tr * {
-    background-color: var(--main-color) !important;
+    background-color: var(--background-color) !important;
     color: var(--main-fontcolor) !important;
 }
 
@@ -337,5 +339,10 @@ table.table_body thead tr th.header:first-child {
 
 .calendar tr .TodayDay {
     background-color: var(--main-color) !important;
-    border: 1px solid #eee !important;
+    border: 1px solid var(--secondary-fontcolor) !important;
+}
+
+.readmessage_editor
+{
+    background-color: var(--background-color);
 }
