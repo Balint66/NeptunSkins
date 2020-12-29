@@ -154,7 +154,7 @@ ul.menubar li.menu-parent {
 }
 
 #panHeader * {
-    background: var(--background-color);
+    background-color: var(--background-color);
 }
 
 #panHeader {
