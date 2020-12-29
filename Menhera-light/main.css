@@ -285,7 +285,7 @@ a, a:hover {
 }
 
 .main_header_l {
-    /*TODO:Neptun Image background-image: url("https://i.imgur.com/xDwCSqh.png") !important;*/
+    background-image: url(neptun_menhera.png) !important;
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
