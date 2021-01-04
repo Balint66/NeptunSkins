@@ -28,6 +28,10 @@ body
     color: var(--secondary-fontcolor) !important;
 }
 
+#mb1 li.menu-parent.has-target {
+    color: var(--link-color) !important;
+}
+
 .ui-widget-content
 {
     color: var(--main-fontcolor);
@@ -101,13 +105,18 @@ body
     background: var(--main-fontcolor);
 }
 
+.CloseLeftBox{
+    height: 60px;
+    background: var(--main-fontcolor);
+}
+
 .gridbutton {
     background: var(--main-color) !important;
 }
 
 .gridbutton, .button {
-    border-radius: 2px;
     -webkit-border-radius: 2px;
+    border-radius: 2px;
 }
 
 #upTraining_topname:hover {
