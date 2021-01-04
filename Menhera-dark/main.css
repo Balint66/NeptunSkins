@@ -109,6 +109,11 @@ body
     background: var(--main-fontcolor);
 }
 
+#upBoxes_CloseLeftBoxTD{
+    height: 60px;
+    background: var(--main-fontcolor);
+}
+
 .gridbutton {
     background: var(--main-color) !important;
 }
