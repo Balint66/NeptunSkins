@@ -112,6 +112,31 @@ body
 #upBoxes_CloseLeftBoxTD{
     height: 60px;
     background: var(--main-fontcolor);
+    position: relative;
+    right: 6px;
+    top: 2px;
+}
+
+#upBoxes_leftbox {
+    width: unset;
+}
+
+#upBoxes > table > tbody > tr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.leftbuttons_td{
+    display: none;
+}
+
+#upBoxes_upRSS{
+    display: none;
+}
+
+#upBoxes_upForum {
+    display: none;
 }
 
 .gridbutton {
