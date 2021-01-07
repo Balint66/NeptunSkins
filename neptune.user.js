@@ -263,6 +263,10 @@ init() {
   document.getElementsByClassName("langskinpartially")[0].appendChild(language_selector);
   document.getElementsByClassName("langskinpartially")[0].appendChild(skin_selector);
 
+  const modernCssRegex = /(?<=\<link href=")(App_Themes\/Skin_Neptun_\S+\/neptun-modern\.css)(?=" type="text\/css" rel="stylesheet"\>)/g;
+
+  h.innerHTML = h.innerHTML.replace(modernCssRegex, 'https://unpkg.com/normalize.css/normalize.css');
+
   // Footer addition
   var footer = $('.footer')[0];
   var logo = footer.children[footer.children.length - 2];
