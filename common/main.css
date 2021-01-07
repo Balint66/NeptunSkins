@@ -3,6 +3,30 @@
     background-image: url(../common/options.svg) !important; 
 }
 
+.tooltipDetails
+{
+    background-color: var(--background-color);
+}
+
+#upFilter_cmbSubjects option.npu_subscribed
+{
+    background-color: var(--main-color)  !important;
+}
+
+.tg-col
+{
+    background-color: var(--background-color);
+}
+
+#skinSelectorDropdown
+{
+    color: var(--main-fontcolor);
+}
+#languageSelectorDropdown
+{
+    color: var(--main-fontcolor);
+}
+
 .newsTable span.link:hover
 {
     /*Color variant*/
@@ -11,7 +35,8 @@
 
 h2
 {
-    color: var(--main-color);  
+    color: var(--main-color);
+    background-color: var(--background-color);
 }
 
 .boldLink
@@ -152,9 +177,15 @@ a:hover
     color: var(--main-color) !important;
 }
 
-.grid_searchbutton, .button
+.main_search .grid_searchbutton, .main_search .button, .button
 {
     background-color: var(--main-color);
+    border: none;
+}
+
+.main_search .grid_searchbutton, .main_search .button
+{
+    background-color: var(--background-color);
 }
 
 .modernui .tile .brand > .badge.activity,
@@ -167,3 +198,15 @@ a:hover
 {
     color: var(--main-color) !important;
 }
+
+.ui-widget-overlay
+{
+    background-color: var(--ovarlay-color);
+}
+
+/* ---- positioning ---- */
+.langskinpartially
+{
+    top: 195px;
+}
+/* ---- positioning ---- */
