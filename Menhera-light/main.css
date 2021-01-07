@@ -107,6 +107,7 @@ body
 
 #upBoxes_CloseLeftBoxTD{
     height: 60px;
+    width: unset;
     background: var(--main-fontcolor);
     position: relative;
     right: 6px;
