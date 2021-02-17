@@ -37,17 +37,12 @@ const language_selector = document.createElement('select');
 language_selector.id = 'languageSelectorDropdown';
 language_selector.style.width = "100px";
 language_selector.onchange = function() {
-  if(this.value == "HU")
-  {
-    dochangeLanguage('0','1038')
-  }
-  else if(this.value == "EN")
-  {
-    dochangeLanguage('1','1033')
-  }
-  else if(this.value == "DE")
-  {
-    dochangeLanguage('2','1031')
+  if (this.value == "HU") {
+    dochangeLanguage('0', '1038')
+  } else if (this.value == "EN") {
+    dochangeLanguage('1', '1033')
+  } else if (this.value == "DE") {
+    dochangeLanguage('2', '1031')
   }
   return false;
 }
@@ -63,7 +58,7 @@ var refreshers = $('[src$="16_ghb_refresh.png"]');
 const base_url = "https://gitcdn.link/repo/Balint66/NeptunSkins/master/";
 const skins = ["Neptune", "Yotsuba", "Menhera-dark", "Menhera-light"];
 
-var commoncss = document.createElement("link"); 
+var commoncss = document.createElement("link");
 commoncss.rel = "stylesheet";
 commoncss.type = "text/css";
 commoncss.href = base_url + "common/main.css";
@@ -77,7 +72,7 @@ window.Sys.WebForms.PageRequestManager.prototype._updatePanel = function(a, b) {
   updatePanelBase(a, b);
 }
 
-    window.CountDown = start;
+window.CountDown = start;
 
 function getCurrentTheme() {
   if (window.localStorage.getItem('CustomSkin') !== 'null') {
@@ -90,8 +85,7 @@ function getCurrentTheme() {
   }
 }
 
-function getCurrentLang()
-{
+function getCurrentLang() {
   return (help_link.href || 'help/hweb_de.pdf').match(/(?<=help\/hweb_)\S+(?=\.pdf)/)[0];
 }
 
@@ -103,8 +97,12 @@ function showHideThemeChooser() {
   if (col != null && col.length !== 0) {
     var cho = $('.skinchooserimg')
     cho.width("100px");
-    cho.animate({height : "0px"}, 300);
-    cho.animate({height : "20px"}, 150);
+    cho.animate({
+      height: "0px"
+    }, 300);
+    cho.animate({
+      height: "20px"
+    }, 150);
     col.toggleClass("skinchooserimgcollapsed skinchooserimgexpanded", 300);
     selector[0].style.visibility = 'visible';
   } else {
@@ -159,7 +157,6 @@ function selectSkin(skinName) {
 
 function
 init() {
-
   //add common css
   var h = document.querySelector('head');
   h.appendChild(commoncss);
@@ -170,6 +167,14 @@ init() {
   var clone = chooserButton.cloneNode(true);
   clone.onclick = showHideThemeChooser;
   chooserButton.parentElement.replaceChild(clone, chooserButton);*/
+
+  // this is for NPU compatibility
+  $("#panCloseHeader").show();
+  $("table.top_menu_wrapper").css("margin-top", "0px").css("margin-bottom", "0px");
+  if ($('#panCloseHeader').attr('class') == "CloseHeader") {
+    $("#panHeader, #panCloseHeader").show();
+    $("#span_changeproject").parent().show();
+  }
 
   // Theme chooser fix
   window.ShowHideThemeChooser = showHideThemeChooser;
@@ -184,32 +189,60 @@ init() {
 
   setSkinImageUrl();
 
-  skinchooserimg_blue.bind('mouseover', {skinName : 'Blue'}, showSkinPreview);
-  skinchooserimg_green.bind('mouseover', {skinName : 'Green'}, showSkinPreview);
-  skinchooserimg_pink.bind('mouseover', {skinName : 'Pink'}, showSkinPreview);
-  skinchooserimg_orange.bind('mouseover', {skinName : 'Orange'},
-                             showSkinPreview);
-  skinchooserimg_teacher.bind('mouseover', {skinName : 'Teacher'},
-                              showSkinPreview);
-  skinchooserimg_purple.bind('mouseover', {skinName : 'Purple'},
-                             showSkinPreview);
-  skinchooserimg_szte.bind('mouseover', {skinName : 'SZTE'}, showSkinPreview);
+  skinchooserimg_blue.bind('mouseover', {
+    skinName: 'Blue'
+  }, showSkinPreview);
+  skinchooserimg_green.bind('mouseover', {
+    skinName: 'Green'
+  }, showSkinPreview);
+  skinchooserimg_pink.bind('mouseover', {
+    skinName: 'Pink'
+  }, showSkinPreview);
+  skinchooserimg_orange.bind('mouseover', {
+      skinName: 'Orange'
+    },
+    showSkinPreview);
+  skinchooserimg_teacher.bind('mouseover', {
+      skinName: 'Teacher'
+    },
+    showSkinPreview);
+  skinchooserimg_purple.bind('mouseover', {
+      skinName: 'Purple'
+    },
+    showSkinPreview);
+  skinchooserimg_szte.bind('mouseover', {
+    skinName: 'SZTE'
+  }, showSkinPreview);
 
-  skinchooserimg_blue.bind('mouseout', {skinName : 'Blue'}, hideSkinPreview);
-  skinchooserimg_green.bind('mouseout', {skinName : 'Green'}, hideSkinPreview);
-  skinchooserimg_pink.bind('mouseout', {skinName : 'Pink'}, hideSkinPreview);
-  skinchooserimg_orange.bind('mouseout', {skinName : 'Orange'},
-                             hideSkinPreview);
-  skinchooserimg_teacher.bind('mouseout', {skinName : 'Teacher'},
-                              hideSkinPreview);
-  skinchooserimg_purple.bind('mouseout', {skinName : 'Purple'},
-                             hideSkinPreview);
-  skinchooserimg_szte.bind('mouseout', {skinName : 'SZTE'}, hideSkinPreview);
+  skinchooserimg_blue.bind('mouseout', {
+    skinName: 'Blue'
+  }, hideSkinPreview);
+  skinchooserimg_green.bind('mouseout', {
+    skinName: 'Green'
+  }, hideSkinPreview);
+  skinchooserimg_pink.bind('mouseout', {
+    skinName: 'Pink'
+  }, hideSkinPreview);
+  skinchooserimg_orange.bind('mouseout', {
+      skinName: 'Orange'
+    },
+    hideSkinPreview);
+  skinchooserimg_teacher.bind('mouseout', {
+      skinName: 'Teacher'
+    },
+    hideSkinPreview);
+  skinchooserimg_purple.bind('mouseout', {
+      skinName: 'Purple'
+    },
+    hideSkinPreview);
+  skinchooserimg_szte.bind('mouseout', {
+    skinName: 'SZTE'
+  }, hideSkinPreview);
 
   // Custom themes
   var skinChooser =
-      (document.getElementsByClassName("skinchooserimgcollapsed") ||
-       document.getElementsByClassName("skinchooserimgexpanded"))[0];
+    (document.getElementsByClassName("skinchooserimgcollapsed") ||
+      document.getElementsByClassName("skinchooserimgexpanded"))[0];
 
   var ch = skinChooser.children[0].children;
 
@@ -228,7 +261,9 @@ init() {
   }
 
   for (var skin in skins) {
-    skin_selector.appendChild(createOption({name : skins[skin]}));
+    skin_selector.appendChild(createOption({
+      name: skins[skin]
+    }));
   }
 
   var currentLang = getCurrentLang();
@@ -236,25 +271,22 @@ init() {
   var hu = document.createElement('option');
   hu.value = 'HU';
   hu.innerHTML = 'Magyar';
-  if(currentLang == 'hu')
-  {
+  if (currentLang == 'hu') {
     hu.selected = true;
   }
   var en = document.createElement('option');
   en.value = 'EN';
   en.innerHTML = 'English';
-  if(currentLang == 'en')
-  {
+  if (currentLang == 'en') {
     en.selected = true;
   }
   var de = document.createElement('option');
   de.value = 'DE';
   de.innerHTML = 'Deutsch';
-  if(currentLang == 'de')
-  {
+  if (currentLang == 'de') {
     de.selected = true;
   }
-  
+
   language_selector.appendChild(hu);
   language_selector.appendChild(en);
   language_selector.appendChild(de);
@@ -271,14 +303,24 @@ init() {
   var footer = $('.footer')[0];
   var logo = footer.children[footer.children.length - 2];
   var PTLogo = document.createElement('td');
-  PTLogo.classList = [ 'footer_sda_logo' ];
+  PTLogo.classList = ['footer_sda_logo'];
   logo.insertAdjacentHTML('afterend', PTLogo.outerHTML);
 }
 
-function createOption({name = ''}) {
+function createOption({
+  name = ''
+}) {
   var skin_option = document.createElement('option');
-  skin_option.onmouseover = window.showSkinPreview.bind(skin_option, {data : {skinName : name}});
-  skin_option.onmouseout = window.hideSkinPreview.bind(skin_option, {data : {skinName : name}});
+  skin_option.onmouseover = window.showSkinPreview.bind(skin_option, {
+    data: {
+      skinName: name
+    }
+  });
+  skin_option.onmouseout = window.hideSkinPreview.bind(skin_option, {
+    data: {
+      skinName: name
+    }
+  });
   skin_option.value = 'Skin_Neptun_Custom_' + name;
   skin_option.selected = ('Skin_Neptun_Custom_' + name) === getCurrentTheme();
   skin_option.innerHTML = name;
@@ -296,4 +338,3 @@ start() {
 }
 
 init();
-
