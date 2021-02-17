@@ -14,6 +14,12 @@ We are tring to create simple and modular themes so anyone could create ther own
 
 But Neptune is not just that: it's a perfect partner in crime with [Neptun PowerUp-nak!](https://github.com/solymosi/npu) It does not just add theme switching but adds some fixing so that creating themes and switching between them is as smooth as possible. Such change is the theme switching buttons: now you can choose your theme froma dropdown menu!
 
+### Installation
+
+Just like you would any other userscript: [install here](https://raw.githubusercontent.com/Balint66/NeptunSkins/master/neptune.user.js)
+
+If you don't already have a userscript manager you could check out [this opensource one](https://violentmonkey.github.io/get-it/).
+
 ### Alreday created and planned themes
 
 - Hyperdimension Neptunia AKA Neptune (✔): the theme that we named our engine after. Our first completed theme.
