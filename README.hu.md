@@ -1,3 +1,6 @@
+- [HU](README.hu.md)
+- [EN](README.en.md)
+
 ## <p id="hun-neptune">Neptune - Egy téma motor a Neptun weboldalhoz</p>
 
 ****
