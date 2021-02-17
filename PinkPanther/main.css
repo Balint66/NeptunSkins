@@ -1,10 +1,10 @@
 :root {
-  --link-color: #54466b;
-  --main-color: #937da7;
-  --background-color: #ccd;
+  --link-color: #a8007b;
+  --main-color: #d911a4;
+  --background-color: #f79ee0;
   --main-fontcolor: black;
   --secondary-fontcolor: #222;
-  --secondary-background-color: #ae9ccc;
+  --secondary-background-color: #ba75a8;
 }
 
 body * {
@@ -333,7 +333,7 @@ table.table_body,
 }
 
 #c_messages_gridMessages_bodytable tbody.scrollablebody tr:hover * {
-  background-color: #4c4858 !important;
+  background-color: #a8007b !important;
 }
 
 table.table_body thead tr th.header:first-child {
