@@ -16,6 +16,12 @@ Próbálunk minél egyszerűbb és modurálisabb témákat írni, hogy bárki k�
 
 Ám a Neptune nem csak ennyiből áll: Tökéletes társa a [Neptun PowerUp-nak!](https://github.com/solymosi/npu) A mellett, hogy témát változtathatsz pár kisebb javítást is eszközöl, ami miatt sokkal simább émény fogad a honlapon. Ilyen változtatás például a téma választó, ahol most már legördülő menüből választhatod ki témáidat.
 
+### Telepítés
+
+Ugyanúgy, mint bármilyen más userscriptet: [telepítés](https://raw.githubusercontent.com/Balint66/NeptunSkins/master/neptune.user.js)
+
+Ha még nincs userscript kezelőd, tudom ajánlani [ezt a nyíltforráskódú bővítmányt](https://violentmonkey.github.io/get-it/).
+
 ### Tervezett témáink és elkészült témáink
 
 - Hyperdimension Neptunia AKA Neptune (✔): a motorunk becenevét adó téma. Az első elkészült témánk.
