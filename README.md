@@ -31,7 +31,7 @@ Ha még nincs userscript kezelőd, tudom ajánlani [ezt a nyíltforráskódú b�
 - Satania (🚧)
 - Windows XP (🚧)
 - Mézga Kriszta / Mézga Család (🚧)
-- Rózsaszín párduc (🔨)
+- Rózsaszín párduc (✔)
 - Stallman (🚧)
 - Lain (🚧)
 - Taiga (🚧)
