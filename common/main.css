@@ -209,4 +209,31 @@ a:hover
 {
     top: 195px;
 }
+
+.CloseLeftBox
+{
+    height: 10px;
+    width: 5px;
+}
+
+.leftbuttons_td
+{
+    display: none;
+}
+
+#upBoxes_upRSS
+{
+    display: none;
+}
+
+#upBoxes_upForum
+{
+    display: none;
+}
+
+#upBoxes > table > tbody > tr 
+{
+    display: flex;
+    flex-direction: column;
+}
 /* ---- positioning ---- */
