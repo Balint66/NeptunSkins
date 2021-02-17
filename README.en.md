@@ -1,4 +1,4 @@
-- [HU](README.hu.md)
+- [HU](README.md)
 
 ## <p id="en-neptune">Neptune - A theme engine for the Neptun webpage</p>
 
