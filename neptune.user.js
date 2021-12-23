@@ -55,7 +55,7 @@ var arrow_right = $("#mainfunctionarrow")[0];
 var crosses = $('[src$="16_ghb_close.png"]');
 var refreshers = $('[src$="16_ghb_refresh.png"]');
 
-const base_url = "https://gitcdn.link/cdn/Balint66/NeptunSkins/master/";
+const base_url = "https://boapps.github.io/NeptunSkins/";
 const skins = ["Neptune", "Yotsuba", "Menhera-dark", "Menhera-light", "PinkPanther"];
 
 var commoncss = document.createElement("link");
