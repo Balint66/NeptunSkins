@@ -233,7 +233,7 @@ a:hover
 
 #upBoxes > table > tbody > tr 
 {
-    display: flex;
+/*     display: flex; */
     flex-direction: column;
 }
 /* ---- positioning ---- */
