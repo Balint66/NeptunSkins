@@ -436,3 +436,8 @@ table.table_body thead tr th.header:first-child {
 {
     display: none;
 }
+
+input
+{
+    background-color: var(--link-color) !important;
+}
