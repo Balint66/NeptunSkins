@@ -33,7 +33,7 @@ Ha még nincs userscript kezelőd, tudom ajánlani [ezt a nyíltforráskódú b�
 - Mézga Kriszta / Mézga Család (🚧)
 - Rózsaszín párduc (✔)
 - Stallman (🚧)
-- Lain (🚧)
+- Lain (✔)
 - Taiga (🚧)
 - One Punch Man (🚧)
 - Tohru (🚧)
