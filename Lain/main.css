@@ -1,0 +1,433 @@
+:root
+{
+    --link-color: #401F1C;
+    --main-color: #D9BFB0;
+    --background-color: #F2E4DC;
+    --main-fontcolor: #401F1C;
+    --secondary-fontcolor: #0D0D0D;
+    --secondary-background-color: #A69E94;
+}
+
+body * {
+    background-image: none !important;
+}
+
+/* ---- fonts ---- */
+ul.menu, li.menu-item
+{
+    color: var(--main-fontcolor);
+}
+
+body
+{
+    color: var(--main-fontcolor);
+}
+
+#mb1 li.menu-parent
+{
+    color: var(--secondary-fontcolor) !important;
+}
+
+#mb1 li.menu-parent.has-target {
+    color: var(--link-color) !important;
+}
+
+.ui-widget-content
+{
+    color: var(--main-fontcolor);
+}
+
+.top_training
+{
+    color:var(--main-fontcolor);
+}
+
+.top_logout
+{
+    color: var(--main-fontcolor);
+}
+
+.main_search, .main_search *
+{
+    color: var(--main-fontcolor);
+    background-color: var(--main-color);
+}
+
+.table_body 
+{
+    color: var(--main-fontcolor);
+    background-color: var(--background-color);
+}
+
+.tableRowName
+{
+    color: var(--main-fontcolor);
+}
+
+.tableRowData
+{
+    color:var(--main-fontcolor);
+}
+
+.header
+{
+    background-color: var(--background-color);
+}
+
+.headerWithCheckbox
+{
+    background-color: var(--background-color);
+}
+
+.scrollablebody tr
+{
+    color: var(--main-fontcolor);
+    background-color: var(--background-color);
+}
+
+.scrollablebody > .Row1_Bold tr
+{
+    color: var(--main-fontcolor);
+    background-color: var(--secondary-background-color);
+}
+
+#upTraining_topname {
+    color: var(--main-fontcolor);
+    background: var(--main-fontcolor);
+}
+
+.top_logout_link {
+    margin-bottom: 2vh;
+}
+
+#panCloseHeader {
+    width: 60px;
+    background: var(--main-fontcolor);
+}
+
+#upBoxes_CloseLeftBoxTD{
+    height: 60px;
+    width: unset;
+    background: var(--main-fontcolor);
+    position: relative;
+    right: 6px;
+    top: 2px;
+}
+
+#upBoxes_leftbox {
+    width: unset;
+}
+
+#upBoxes > table > tbody > tr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.leftbuttons_td{
+    display: none;
+}
+
+#upBoxes_upRSS{
+    display: none;
+}
+
+#upBoxes_upForum {
+    display: none;
+}
+
+
+#upTraining_topname:hover {
+    color: var(--secondary-background-color);
+    background: var(--main-fontcolor);
+}
+
+.caption
+{
+    color: var(--main-fontcolor);
+}
+
+/* ---- fonts ---- */
+
+#h_exams_gridExamList_bodytable tr.gridrow_blue td
+{
+    background-color:var(--secondary-background-color) !important;
+    color: var(--main-fontcolor) !important;
+}
+
+#h_markbook_gridIndexEntry_bodytable tr.SubjectCompletedRow td
+{
+    background-color: var(--secondary-background-color) !important;
+}
+
+ul.menubar li.menu-parent {
+    background-image: none;
+    padding: 10px;
+    color: var(--link-color);
+}
+
+.top_menu_wrapper {
+    border: var(--main-fontcolor) 1px solid;
+    background: var(--background-color);
+}
+
+.main_search
+{
+    border: var(--main-fontcolor) 1px solid !important;
+}
+
+#panHeader * {
+    background-color: var(--background-color);
+}
+
+#panHeader {
+    visibility: visible;
+}
+
+ul .menu {
+    border: var(--main-fontcolor) 1px solid;
+    background: var(--background-color);
+}
+.ui-widget-content
+{
+    background: var(--background-color);
+}
+
+ul.menu .menu-hover {
+    background-image: none;
+    background: var(--link-color);
+}
+
+ul.menu li.menu-item {
+    border: none;
+}
+
+.FunctionHeaderItem {
+    visibility: collapse;
+}
+
+#upMenuCaption_menucaption {
+    color: var(--link-color);
+}
+
+.function_table {
+    background: var(--background-color);
+}
+
+#function_tableheader {
+    background: var(--background-color);
+}
+
+.function {
+    border: var(--main-fontcolor) 1px solid;
+}
+
+tbody tr.no_style td.no_style {
+    height: 0 !important;
+}
+
+.main_function_table {
+    margin-top: 30px;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.sp_body
+{
+    background-color: var(--background-color);
+}
+
+.calendar .Day
+{
+    background-color: var(--background-color) !important;
+}
+
+.calendar .SelectedDay
+{
+    background-color: var(--background-color) !important;
+}
+
+.calendar .DayHeader
+{
+    background-color: var(--background-color) !important;
+}
+
+#upBoxes_leftbox>div {
+    border: var(--main-fontcolor) 1px solid;
+    margin-bottom: 8px;
+    background-color: var(--background-color);
+}
+
+.Gadget>tbody>tr:first-child * {
+    color: var(--link-color);
+}
+
+.Gadget>tbody>tr:first-child {
+    background: var(--background-color);
+}
+
+.gadgettitleimage {
+    visibility: collapse;
+}
+
+.GadgetHeaderPanelButtonLeftMenu {
+    visibility: collapse;
+}
+
+.boxestable {
+    margin-top: 0 !important;
+}
+
+.leftbuttons_td {
+    padding-right: 10px;
+}
+.leftbuttons_td>div {
+    border: var(--main-fontcolor) 1px solid;
+}
+
+.leftbox * {
+    border: none;
+}
+
+.function_table * {
+    border: none;
+}
+
+.langskinpartially {
+    right: 0;
+}
+
+.langskinpartially div{
+    visibility: collapse;
+}
+
+.upChooser, .main_header_l * {
+    visibility: hidden !important;
+}
+
+.main_header_l {
+    background-image: url(neptun_lain.png) !important;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+
+.main_header_r_table_skin {
+    background: url(lain.gif) !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    margin: 30px;
+    width: 224px;
+    float: right;
+}
+
+#c_messages_gridMessages_bodytable tbody.scrollablebody tr.Row1_Bold * {
+    background-color: var(--main-color) !important;
+}
+
+table.table_body, #c_messages_gridMessages_bodytable tbody.scrollablebody tr {
+    border: 1px solid var(--main-fontcolor);
+}
+
+#c_messages_gridMessages_bodytable tbody.scrollablebody tr * {
+    background-color: var(--background-color) !important;
+    color: var(--main-fontcolor) !important;
+}
+
+#c_messages_gridMessages_bodytable tbody.scrollablebody tr:hover * {
+    background-color: var(--secondary-background-color) !important;
+}
+
+table.table_body thead tr th.header:first-child {
+    padding-top: 10px !important;
+}
+
+#calendar_calendar tr td * {
+    color: var(--main-fontcolor) !important;
+}
+
+.calendar tr .TodayDay {
+    background-color: var(--main-color) !important;
+    border: 1px solid var(--secondary-fontcolor) !important;
+}
+
+.readmessage_editor
+{
+    background-color: var(--background-color);
+}
+
+
+.ajax__tab_header .ajax__tab_outer *
+{
+    background: none !important;
+}
+
+.ajax__tab_header *
+{
+    background: none !important;
+}
+
+.ajax__tab_header .ajax__tab_outer .ajax__tab_inner *
+{
+    background: none !important;
+}
+
+.sda .ajax__tab_active .ajax__tab_outer
+{
+    background: none !important;
+}
+
+.ajax__tab_header .ajax__tab_outer
+{
+    background: none !important;
+}
+
+.ajax__tab_tab:hover
+{
+    color: var(--secondary-color) !important;
+}
+
+.ui-widget-header
+{
+    background-color: var(--main-color);
+}
+
+.ui-dialog-titlebar-maximize
+{
+    color: var(--link-color) !important;
+}
+
+.sda .ajax__tab_active .ajax__tab_inner
+{
+    background: none !important;
+}
+
+.footer_mid
+{
+    display: none;
+}
+
+.footer_sda_logo
+{
+    display: none;
+}
+
+a {
+    color: var(--link-color) !important;;
+}
+
+.button, .gridbutton, .mainfunction_item
+{
+    background-color: var(--link-color) !important;
+    color: var(--background-color) !important;
+    -webkit-border-radius: 2px !important;
+    border-radius: 2px !important;
+    -webkit-box-shadow: 0px 1px 1px #363636 !important;
+    box-shadow: 0px 1px 1px #363636 !important;
+}
+
+.sda .ajax__tab_active .ajax__tab_tab
+{
+    color: var(--link-color) !important;
+}
