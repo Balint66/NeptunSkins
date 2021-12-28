@@ -233,7 +233,21 @@ a:hover
 
 #upBoxes > table > tbody > tr 
 {
-    display: flex;
+/*     display: flex; */
     flex-direction: column;
 }
 /* ---- positioning ---- */
+
+/* clean up login page */
+#div_login_right_side,
+#td_LeftImage,
+#tableMain,
+#td_Footer
+{
+    background-image: none;
+}
+
+.login_info_text
+{
+    display: none;
+}

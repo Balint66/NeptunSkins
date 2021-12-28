@@ -140,3 +140,63 @@ body * {
     width: 300px;
     float: right;
 }
+
+.ajax__tab_active *
+{
+    color: black;
+}
+
+.ajax__tab_header .ajax__tab_outer *
+{
+    background: none !important;
+}
+
+.ajax__tab_header *
+{
+    background: none !important;
+}
+
+.ajax__tab_header .ajax__tab_outer .ajax__tab_inner *
+{
+    background: none !important;
+}
+
+.sda .ajax__tab_active .ajax__tab_outer
+{
+    background: none !important;
+}
+
+.ajax__tab_header .ajax__tab_outer
+{
+    background: none !important;
+}
+
+.ajax__tab_tab:hover
+{
+    color: var(--secondary-color) !important;
+}
+
+.ui-widget-header
+{
+    background-color: var(--main-color);
+}
+
+.ui-dialog-titlebar-maximize
+{
+    color: white;
+}
+
+.sda .ajax__tab_active .ajax__tab_inner
+{
+    background: none !important;
+}
+
+.footer_mid
+{
+    display: none;
+}
+
+.footer_sda_logo
+{
+    display: none;
+}
