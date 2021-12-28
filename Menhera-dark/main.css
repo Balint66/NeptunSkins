@@ -440,4 +440,5 @@ table.table_body thead tr th.header:first-child {
 input
 {
     background-color: var(--link-color) !important;
+    color: var(--dark-font-color) !important;
 }
