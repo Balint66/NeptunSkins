@@ -13,6 +13,7 @@
 // @grant          none
 // @version        2.0.1
 // @author         --
+// @icon           https://balint66.github.io/NeptunSkins/repo_assets/icon.webp
 // @description    11/24/2020, 3:09:00 PM
 // @downloadURL    https://raw.githubusercontent.com/Balint66/NeptunSkins/master/neptune.user.js
 // ==/UserScript==
