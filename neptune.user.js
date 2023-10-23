@@ -56,8 +56,16 @@ var arrow_right = $("#mainfunctionarrow")[0];
 var crosses = $('[src$="16_ghb_close.png"]');
 var refreshers = $('[src$="16_ghb_refresh.png"]');
 
-const base_url = "https://Balint66.github.io/NeptunSkins/";
-const skins = ["Neptune", "Yotsuba", "Menhera-dark", "Menhera-light", "PinkPanther", "Lain"];
+base_urls = ["https://Balint66.github.io/NeptunSkins/"];
+skins = [];
+for (let i = 0; i < base_urls.length; i++) {
+  const url = base_urls[i];
+  $.getJSON(url + "skins.json",
+    function (data, textStatus, jqXHR) {
+      skins[i] = $.parseJSON(data)["skins"];
+    }
+  );
+}
 
 var commoncss = document.createElement("link");
 commoncss.rel = "stylesheet";
@@ -138,6 +146,13 @@ window.dochangeSkin = function(href, skin) {
 }
 
 function selectSkin(skinName) {
+  var base_url = "";
+  for (let i = 0; i < skins.length; i++) {
+    const names = skins[i];
+    if (names.includes(skinName)){
+      base_url = base_urls[i]
+    }
+  }
   css.href = base_url + skinName + "/main.css?v=1";
   arrow_right.src = base_url + skinName + "/right_arrow.png";
   if (arrow_up !== undefined) {
