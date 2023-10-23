@@ -271,7 +271,7 @@ init() {
     var name = ch[i].onclick.toString().match(reg)[0];
     option.value = name;
     option.innerHTML = name.split('_').slice(-1)[0];
-    if (selectedTheme.toLowerCase() === name.toLowerCase()) {
+    if (selectedTheme[0].toLowerCase() === name.toLowerCase()) {
       option.selected = true;
     }
     skin_selector.appendChild(option);
