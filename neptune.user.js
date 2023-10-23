@@ -62,6 +62,7 @@ for (let i = 0; i < base_urls.length; i++) {
   const url = base_urls[i];
   $.getJSON(url + "skins.json",
     function (data, textStatus, jqXHR) {
+      console.log(data);
       skins[i] = $.parseJSON(data)["skins"];
     }
   );
