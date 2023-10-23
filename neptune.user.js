@@ -56,7 +56,7 @@ var arrow_right = $("#mainfunctionarrow")[0];
 var crosses = $('[src$="16_ghb_close.png"]');
 var refreshers = $('[src$="16_ghb_refresh.png"]');
 
-base_urls = ["https://Balint66.github.io/NeptunSkins/"];
+base_urls = ["https://Botond24.github.io/NeptunSkins/"];
 skins = [];
 for (let i = 0; i < base_urls.length; i++) {
   const url = base_urls[i];
