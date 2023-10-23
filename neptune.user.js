@@ -70,14 +70,14 @@ for (let i = 0; i < base_urls.length; i++) {
 var commoncss = document.createElement("link");
 commoncss.rel = "stylesheet";
 commoncss.type = "text/css";
-commoncss.href = base_url + "common/main.css";
+commoncss.href = base_urls[0] + "common/main.css";
 
 var updatePanelBase = window.Sys.WebForms.PageRequestManager.prototype._updatePanel;
 
 window.Sys.WebForms.PageRequestManager.prototype._updatePanel = function(a, b) {
   var currentTheme = getCurrentTheme().split('_').slice(-1);
-  b = b.replace(/"\S+16_ghb_close\.png"/gm, `"${base_url + currentTheme + '/16_ghb_close.svg'}" style="height: 16px;"`);
-  b = b.replace(/"\S+16_ghb_refresh\.png"/gm, `"${base_url + currentTheme + '/16_ghb_refresh.svg'}" style="height: 16px;"`);
+  b = b.replace(/"\S+16_ghb_close\.png"/gm, `"${currentTheme[1] + currentTheme[0] + '/16_ghb_close.svg'}" style="height: 16px;"`);
+  b = b.replace(/"\S+16_ghb_refresh\.png"/gm, `"${currentTheme[1] + currentTheme[0] + '/16_ghb_refresh.svg'}" style="height: 16px;"`);
   updatePanelBase(a, b);
 }
 
@@ -85,12 +85,12 @@ window.CountDown = start;
 
 function getCurrentTheme() {
   if (window.localStorage.getItem('CustomSkin') !== 'null') {
-    return 'Skin_Neptun_Custom_' + window.localStorage.getItem('CustomSkin');
+    return ['Skin_Neptun_Custom_' + window.localStorage.getItem('CustomSkin'), window.localStorage.getItem('CustomUrl')];
   } else {
     var head = $('head')[0];
     var theme = head.innerHTML.match(/(?<=App_Themes\/)Skin_Neptun_\S+(?=\/(s|S)kin_(n|N)eptun_\S+\.css)/)[0];
     console.log(theme);
-    return theme;
+    return [theme,base_urls[0]];
   }
 }
 
@@ -141,18 +141,19 @@ window.dochangeSkin = function(href, skin) {
   var skinName = ls[ls.length - 1];
 
   window.localStorage.setItem('CustomSkin', skinName);
-
-  selectSkin(skinName)
-}
-
-function selectSkin(skinName) {
-  var base_url = "";
+  var url = "";
   for (let i = 0; i < skins.length; i++) {
     const names = skins[i];
     if (names.includes(skinName)){
-      base_url = base_urls[i]
+      url = base_urls[i];
+      break;
     }
   }
+  window.localStorage.setItem('CustomUrl', url)
+  selectSkin(skinName, url)
+}
+
+function selectSkin(skinName, base_url) {
   css.href = base_url + skinName + "/main.css?v=1";
   arrow_right.src = base_url + skinName + "/right_arrow.png";
   if (arrow_up !== undefined) {
@@ -350,7 +351,7 @@ start() {
   h.appendChild(css);
 
   var skin = window.localStorage.getItem('CustomSkin') || "Neptune";
-  selectSkin(skin);
+  selectSkin(skin, base_urls[0]);
 }
 
 init();
