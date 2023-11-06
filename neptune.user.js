@@ -11,11 +11,11 @@
 // @include        https://host.sdakft.hu/*
 // @include        https://neptun.ejf.hu/ejfhw/*
 // @grant          none
-// @version        2.0.1
+// @version        2.0.2
 // @author         --
-// @icon           https://balint66.github.io/NeptunSkins/repo_assets/icon.webp
-// @description    11/24/2020, 3:09:00 PM
-// @downloadURL    https://raw.githubusercontent.com/Balint66/NeptunSkins/master/neptune.user.js
+// @icon           https://botond24.github.io/NeptunSkins/repo_assets/icon.webp
+// @description    11/06/2023, 4:33:00 PM
+// @downloadURL    https://raw.githubusercontent.com/Botond24/NeptunSkins/master/neptune.user.js
 // ==/UserScript==
 
 var base_urls = ["https://Botond24.github.io/NeptunSkins/","https://xerfix.github.io/NeptunSkins/"];
