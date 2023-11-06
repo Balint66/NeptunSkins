@@ -56,7 +56,7 @@ var arrow_right = $("#mainfunctionarrow")[0];
 var crosses = $('[src$="16_ghb_close.png"]');
 var refreshers = $('[src$="16_ghb_refresh.png"]');
 
-var base_urls = ["https://Botond24.github.io/NeptunSkins/"];
+var base_urls = ["https://Botond24.github.io/NeptunSkins/","https://xerfix.github.io/NeptunSkins/"];
 var skins = [];
 var cont = false;
 $.ajaxSetup({async: false})
@@ -67,7 +67,20 @@ for (let i = 0; i < base_urls.length; i++) {
       //console.log(data);
       skins.push(data.skins);
     }
-  )
+  ).fail(function(){
+      if(!window.localStorage.getItem(`data_${i+1}`)){
+          skins.push([]);
+          console.log(skins)
+          var skin = prompt(`Type the name of a skin in the ${url} skins`);
+          while(skin != ""){
+              skins[skins.length-1].push(skin)
+              skin = prompt(`Type the name of a skin in the ${url} skins`);
+          }
+          window.localStorage.setItem(`data_${i+1}`,skins[skins.length-1])
+      }else {
+          skins.push(window.localStorage.getItem(`data_${i+1}`).split(","))
+      }
+  })
 };
 $.ajaxSetup({async: true})
 var commoncss = document.createElement("link");
@@ -78,9 +91,9 @@ commoncss.href = base_urls[0] + "common/main.css";
 var updatePanelBase = window.Sys.WebForms.PageRequestManager.prototype._updatePanel;
 
 window.Sys.WebForms.PageRequestManager.prototype._updatePanel = function(a, b) {
-  var currentTheme = getCurrentTheme().split('_').slice(-1);
-  b = b.replace(/"\S+16_ghb_close\.png"/gm, `"${currentTheme[1] + currentTheme[0] + '/16_ghb_close.svg'}" style="height: 16px;"`);
-  b = b.replace(/"\S+16_ghb_refresh\.png"/gm, `"${currentTheme[1] + currentTheme[0] + '/16_ghb_refresh.svg'}" style="height: 16px;"`);
+  var currentTheme = getCurrentTheme()
+  b = b.replace(/"\S+16_ghb_close\.png"/gm, `"${currentTheme[1] + currentTheme[0].split('_').slice(-1) + '/16_ghb_close.svg'}" style="height: 16px;"`);
+  b = b.replace(/"\S+16_ghb_refresh\.png"/gm, `"${currentTheme[1] + currentTheme[0].split('_').slice(-1) + '/16_ghb_refresh.svg'}" style="height: 16px;"`);
   updatePanelBase(a, b);
 }
 
