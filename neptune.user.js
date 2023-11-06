@@ -56,18 +56,20 @@ var arrow_right = $("#mainfunctionarrow")[0];
 var crosses = $('[src$="16_ghb_close.png"]');
 var refreshers = $('[src$="16_ghb_refresh.png"]');
 
-base_urls = ["https://Botond24.github.io/NeptunSkins/"];
-skins = [];
+var base_urls = ["https://Botond24.github.io/NeptunSkins/"];
+var skins = [];
+var cont = false;
+$.ajaxSetup({async: false})
 for (let i = 0; i < base_urls.length; i++) {
   const url = base_urls[i];
   $.getJSON(url + "skins.json",
     function (data, textStatus, jqXHR) {
-      console.log(data);
-      skins[i] = $.parseJSON(data)["skins"];
+      //console.log(data);
+      skins.push(data.skins);
     }
-  );
-}
-
+  )
+};
+$.ajaxSetup({async: true})
 var commoncss = document.createElement("link");
 commoncss.rel = "stylesheet";
 commoncss.type = "text/css";
@@ -277,12 +279,14 @@ init() {
     }
     skin_selector.appendChild(option);
   }
-
-  for (var skin in skins) {
-    skin_selector.appendChild(createOption({
-      name: skins[skin]
-    }));
-  }
+  console.log(skins);
+  for (var names in skins){
+      console.log(names);
+      for (var skin in skins[names]){
+          console.log(skin);
+          skin_selector.appendChild(createOption({name: skins[names][skin]}));
+      };
+  };
 
   var currentLang = getCurrentLang();
 
