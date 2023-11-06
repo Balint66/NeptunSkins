@@ -11,12 +11,17 @@
 // @include        https://host.sdakft.hu/*
 // @include        https://neptun.ejf.hu/ejfhw/*
 // @grant          none
-// @version        2.0.1
+// @version        2.0.2
 // @author         --
-// @icon           https://balint66.github.io/NeptunSkins/repo_assets/icon.webp
-// @description    11/24/2020, 3:09:00 PM
-// @downloadURL    https://raw.githubusercontent.com/Balint66/NeptunSkins/master/neptune.user.js
+// @icon           https://botond24.github.io/NeptunSkins/repo_assets/icon.webp
+// @description    11/06/2023, 4:33:00 PM
+// @downloadURL    https://raw.githubusercontent.com/Botond24/NeptunSkins/master/neptune.user.js
 // ==/UserScript==
+
+var base_urls = ["https://Botond24.github.io/NeptunSkins/","https://xerfix.github.io/NeptunSkins/"];
+
+
+
 
 const $ = window.jQuery;
 var ChooseBase = window.dochangeSkin;
@@ -56,20 +61,44 @@ var arrow_right = $("#mainfunctionarrow")[0];
 var crosses = $('[src$="16_ghb_close.png"]');
 var refreshers = $('[src$="16_ghb_refresh.png"]');
 
-const base_url = "https://Balint66.github.io/NeptunSkins/";
-const skins = ["Neptune", "Yotsuba", "Menhera-dark", "Menhera-light", "PinkPanther", "Lain"];
 
+var skins = [];
+var cont = false;
+$.ajaxSetup({async: false})
+for (let i = 0; i < base_urls.length; i++) {
+  const url = base_urls[i];
+  $.getJSON(url + "skins.json",
+    function (data, textStatus, jqXHR) {
+      //console.log(data);
+      skins.push(data.skins);
+    }
+  ).fail(function(){
+      if(!window.localStorage.getItem(`data_${i+1}`)){
+          skins.push([]);
+          console.log(skins)
+          var skin = prompt(`Type the name of a skin in the ${url} skins`);
+          while(skin != ""){
+              skins[skins.length-1].push(skin)
+              skin = prompt(`Type the name of a skin in the ${url} skins`);
+          }
+          window.localStorage.setItem(`data_${i+1}`,skins[skins.length-1])
+      }else {
+          skins.push(window.localStorage.getItem(`data_${i+1}`).split(","))
+      }
+  })
+};
+$.ajaxSetup({async: true})
 var commoncss = document.createElement("link");
 commoncss.rel = "stylesheet";
 commoncss.type = "text/css";
-commoncss.href = base_url + "common/main.css";
+commoncss.href = base_urls[0] + "common/main.css";
 
 var updatePanelBase = window.Sys.WebForms.PageRequestManager.prototype._updatePanel;
 
 window.Sys.WebForms.PageRequestManager.prototype._updatePanel = function(a, b) {
-  var currentTheme = getCurrentTheme().split('_').slice(-1);
-  b = b.replace(/"\S+16_ghb_close\.png"/gm, `"${base_url + currentTheme + '/16_ghb_close.svg'}" style="height: 16px;"`);
-  b = b.replace(/"\S+16_ghb_refresh\.png"/gm, `"${base_url + currentTheme + '/16_ghb_refresh.svg'}" style="height: 16px;"`);
+  var currentTheme = getCurrentTheme()
+  b = b.replace(/"\S+16_ghb_close\.png"/gm, `"${currentTheme[1] + currentTheme[0].split('_').slice(-1) + '/16_ghb_close.svg'}" style="height: 16px;"`);
+  b = b.replace(/"\S+16_ghb_refresh\.png"/gm, `"${currentTheme[1] + currentTheme[0].split('_').slice(-1) + '/16_ghb_refresh.svg'}" style="height: 16px;"`);
   updatePanelBase(a, b);
 }
 
@@ -77,12 +106,12 @@ window.CountDown = start;
 
 function getCurrentTheme() {
   if (window.localStorage.getItem('CustomSkin') !== 'null') {
-    return 'Skin_Neptun_Custom_' + window.localStorage.getItem('CustomSkin');
+    return ['Skin_Neptun_Custom_' + window.localStorage.getItem('CustomSkin'), window.localStorage.getItem('CustomUrl')];
   } else {
     var head = $('head')[0];
     var theme = head.innerHTML.match(/(?<=App_Themes\/)Skin_Neptun_\S+(?=\/(s|S)kin_(n|N)eptun_\S+\.css)/)[0];
     console.log(theme);
-    return theme;
+    return [theme,base_urls[0]];
   }
 }
 
@@ -133,11 +162,19 @@ window.dochangeSkin = function(href, skin) {
   var skinName = ls[ls.length - 1];
 
   window.localStorage.setItem('CustomSkin', skinName);
-
-  selectSkin(skinName)
+  var url = "";
+  for (let i = 0; i < skins.length; i++) {
+    const names = skins[i];
+    if (names.includes(skinName)){
+      url = base_urls[i];
+      break;
+    }
+  }
+  window.localStorage.setItem('CustomUrl', url)
+  selectSkin(skinName, url)
 }
 
-function selectSkin(skinName) {
+function selectSkin(skinName, base_url) {
   css.href = base_url + skinName + "/main.css?v=1";
   arrow_right.src = base_url + skinName + "/right_arrow.png";
   if (arrow_up !== undefined) {
@@ -255,17 +292,19 @@ init() {
     var name = ch[i].onclick.toString().match(reg)[0];
     option.value = name;
     option.innerHTML = name.split('_').slice(-1)[0];
-    if (selectedTheme.toLowerCase() === name.toLowerCase()) {
+    if (selectedTheme[0].toLowerCase() === name.toLowerCase()) {
       option.selected = true;
     }
     skin_selector.appendChild(option);
   }
-
-  for (var skin in skins) {
-    skin_selector.appendChild(createOption({
-      name: skins[skin]
-    }));
-  }
+  console.log(skins);
+  for (var names in skins){
+      console.log(names);
+      for (var skin in skins[names]){
+          console.log(skin);
+          skin_selector.appendChild(createOption({name: skins[names][skin]}));
+      };
+  };
 
   var currentLang = getCurrentLang();
 
@@ -335,7 +374,7 @@ start() {
   h.appendChild(css);
 
   var skin = window.localStorage.getItem('CustomSkin') || "Neptune";
-  selectSkin(skin);
+  selectSkin(skin, base_urls[0]);
 }
 
 init();

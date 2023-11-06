@@ -14,6 +14,15 @@ We are tring to create simple and modular themes so anyone could create ther own
 
 But Neptune is not just that: it's a perfect partner in crime with [Neptun PowerUp-nak!](https://github.com/solymosi/npu) It does not just add theme switching but adds some fixing so that creating themes and switching between them is as smooth as possible. Such change is the theme switching buttons: now you can choose your theme froma dropdown menu!
 
+### Add-on
+
+I implemented multi-source support in development. Not the prettiest at the moment, but it works.
+From now on, I would like to ask my dear colleagues to update their repo with a `skins.json` file similar to mine.
+
+Of course, I also thought about the case when this `skins.json` is not found, in which case the code requests the name of the skins from the user.
+
+Several sources can be specified in the file code in the `base_urls` list.
+
 ### Installation
 
 Just like you would any other userscript: [install here](https://raw.githubusercontent.com/Balint66/NeptunSkins/master/neptune.user.js)
