@@ -15,10 +15,18 @@ Neptune az egy User script, ami felfrissíti a Neptunod kinézetét! Akartál va
 Próbálunk minél egyszerűbb és modurálisabb témákat írni, hogy bárki képes legyen saját, egyedi témákat létrehozni, így teremtve meg az otthonosság érzetét.
 
 Ám a Neptune nem csak ennyiből áll: Tökéletes társa a [Neptun PowerUp-nak!](https://github.com/solymosi/npu) A mellett, hogy témát változtathatsz pár kisebb javítást is eszközöl, ami miatt sokkal simább émény fogad a honlapon. Ilyen változtatás például a téma választó, ahol most már legördülő menüből választhatod ki témáidat.
+### Hozzáadások
+
+Saját fejlesztéssel implementáltam multi-source supportot. jelenleg nem a legszebb, de működik.
+Innentől kezde kérném kedves társaimat, frissítsék repo-jukat egy `skins.json` file-al a sajátomhoz hasonlóan.
+
+Persze gondoltam arra az esetre is ha nem található ez a `skins.json`, ebben az esetben a kód a felhasználótól kéri be a skinek nevét.
+
+Több sourceot a file kódjában lehet megadni a `base_urls` listában.
 
 ### Telepítés
 
-Ugyanúgy, mint bármilyen más userscriptet: [telepítés](https://raw.githubusercontent.com/Balint66/NeptunSkins/master/neptune.user.js)
+Ugyanúgy, mint bármilyen más userscriptet: [telepítés](https://raw.githubusercontent.com/Botond24/NeptunSkins/master/neptune.user.js)
 
 Ha még nincs userscript kezelőd, tudom ajánlani [ezt a nyíltforráskódú bővítmányt](https://violentmonkey.github.io/get-it/).
 
