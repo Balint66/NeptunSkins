@@ -18,6 +18,11 @@
 // @downloadURL    https://raw.githubusercontent.com/Balint66/NeptunSkins/master/neptune.user.js
 // ==/UserScript==
 
+var base_urls = ["https://Botond24.github.io/NeptunSkins/","https://xerfix.github.io/NeptunSkins/"];
+
+
+
+
 const $ = window.jQuery;
 var ChooseBase = window.dochangeSkin;
 
@@ -56,7 +61,7 @@ var arrow_right = $("#mainfunctionarrow")[0];
 var crosses = $('[src$="16_ghb_close.png"]');
 var refreshers = $('[src$="16_ghb_refresh.png"]');
 
-var base_urls = ["https://Botond24.github.io/NeptunSkins/","https://xerfix.github.io/NeptunSkins/"];
+
 var skins = [];
 var cont = false;
 $.ajaxSetup({async: false})
